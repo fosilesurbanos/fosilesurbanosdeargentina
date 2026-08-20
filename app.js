@@ -30,7 +30,7 @@ const map = L.map('map', {
   layers: [osm]
 });
 
-// Selector de capas (esquina superior derecha)
+// Selector de capas
 const baseMaps = {
   "OpenStreetMap": osm,
   "Satelital (Esri)": esriSat,
@@ -53,22 +53,52 @@ const fosilIcon = L.divIcon({
 const cluster = L.markerClusterGroup();
 let todosLosMarcadores = [];
 
-// --- 2. NORMALIZACIÓN DE ORGANISMOS ---
-function normalizarOrganismo(texto) {
-  if (!texto) return "Otros";
-  const t = texto.toLowerCase();
+// --- 2. NORMALIZACIÓN DE ORGANISMOS (Permite Múltiples Categorías) ---
+function normalizarOrganismos(texto) {
+  if (!texto) return ["Otros"];
   
-  if (t.includes("ammonit") || t.includes("ammono") || t.includes("ammonoid")) return "Ammonites";
-  if (t.includes("gastropod") || t.includes("caracol") || t.includes("gastro")) return "Gastrópodos";
-  if (t.includes("bivalv") || t.includes("ostra") || t.includes("rudista")) return "Bivalvos / Ostras";
-  if (t.includes("coral")) return "Corales";
-  if (t.includes("nummulit") || t.includes("foramin")) return "Nummulites / Foraminíferos";
-  if (t.includes("belemn") || t.includes("belemno")) return "Belemnites";
-  if (t.includes("erizo") || t.includes("echino")) return "Erizos de mar";
-  if (t.includes("estrella")) return "Estrellas de mar";
-  if (t.includes("trazas") || t.includes("cruziana")) return "Trazas fósiles";
+  // Normalizar removiendo tildes y pasando a minúsculas
+  const t = texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  const grupos = [];
+
+  if (t.includes("ammonit") || t.includes("ammono") || t.includes("ammonoid")) {
+    grupos.push("Ammonites");
+  }
+  if (t.includes("gastropod") || t.includes("caracol") || t.includes("gastro")) {
+    grupos.push("Gastrópodos");
+  }
+  if (t.includes("bivalv") || t.includes("ostra") || t.includes("rudista")) {
+    grupos.push("Bivalvos / Ostras");
+  }
+  if (t.includes("coral")) {
+    grupos.push("Corales");
+  }
+  if (t.includes("nummulit") || t.includes("foramin")) {
+    grupos.push("Nummulites / Foraminíferos");
+  }
+  if (t.includes("belemn") || t.includes("belemno")) {
+    grupos.push("Belemnites");
+  }
   
-  return "Otros";
+  // Grupo Equinodermos (Erizos, Estrellas, Dólares de arena, Crinoideos, etc.)
+  if (
+    t.includes("erizo") || t.includes("estrella") || t.includes("dolar") || 
+    t.includes("echino") || t.includes("astero") || t.includes("ophiuro") || 
+    t.includes("crino") || t.includes("equinodermo")
+  ) {
+    grupos.push("Equinodermos");
+  }
+
+  if (t.includes("traza") || t.includes("cruziana")) {
+    grupos.push("Trazas fósiles");
+  }
+
+  // Si no coincidió con ninguna categoría anterior
+  if (grupos.length === 0) {
+    grupos.push("Otros");
+  }
+
+  return grupos;
 }
 
 // --- 3. CARGA DE REGISTROS Y MARCADORES ---
@@ -100,7 +130,7 @@ function cargarPuntos() {
     marker.bindPopup(popupHtml, { maxWidth: 280 });
 
     marker.datosFosil = {
-      organismoGrupo: normalizarOrganismo(f.organismo),
+      organismosGrupos: normalizarOrganismos(f.organismo),
       autor: f.autor ? f.autor.trim() : "Anónimo"
     };
 
@@ -126,7 +156,9 @@ function poblarSelects() {
   selectOrg.innerHTML = '<option value="todos">Todos los organismos</option>';
   selectAut.innerHTML = '<option value="todos">Todos los autores</option>';
 
-  const organismosUnicos = [...new Set(todosLosMarcadores.map(m => m.datosFosil.organismoGrupo))].sort();
+  // Extraer todos los grupos asignados a cada registro sin duplicados
+  const todosLosGrupos = todosLosMarcadores.flatMap(m => m.datosFosil.organismosGrupos);
+  const organismosUnicos = [...new Set(todosLosGrupos)].sort();
   const autoresUnicos = [...new Set(todosLosMarcadores.map(m => m.datosFosil.autor))].sort();
 
   organismosUnicos.forEach(org => {
@@ -148,7 +180,8 @@ function aplicarFiltros() {
   cluster.clearLayers();
 
   todosLosMarcadores.forEach(m => {
-    const cumpleOrg = (orgSel === "todos" || m.datosFosil.organismoGrupo === orgSel);
+    // Un marcador cumple si el filtro es 'todos' o si la categoría elegida está en su lista de grupos
+    const cumpleOrg = (orgSel === "todos" || m.datosFosil.organismosGrupos.includes(orgSel));
     const cumpleAut = (autSel === "todos" || m.datosFosil.autor === autSel);
 
     if (cumpleOrg && cumpleAut) {
