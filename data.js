@@ -1,1 +1,869 @@
-const fosiles = [];
+const fosiles = [
+  {
+    "id": "b6e21d30-9c98-11f1-b336-a7c128a1086b",
+    "lat": -34.740209,
+    "lng": -58.390593,
+    "titulo": "Country Club, en las baldosas de la entrada",
+    "direccion": "Country Club, en las baldosas de la entrada",
+    "organismo": "Ammonites",
+    "autor": "Ezequiel Couselo",
+    "fecha": "2026-08-20T13:11:54.000Z",
+    "fotos": [
+      "fotos/b6e21d30-9c98-11f1-b336-a7c128a1086b_1787231520.jpg",
+      "fotos/b6e21d30-9c98-11f1-b336-a7c128a1086b_1787231529.jpg"
+    ]
+  },
+  {
+    "id": "2a768d80-9c08-11f1-8335-273cb6d9afd0",
+    "lat": -31.380566,
+    "lng": -64.137734,
+    "titulo": "León y Pizarro 2458, paredes de la puerta de la vivienda",
+    "direccion": "León y Pizarro 2458, paredes de la puerta de la vivienda",
+    "organismo": "Ammonites",
+    "autor": "@dariogliendo",
+    "fecha": "2026-08-19T19:57:11.000Z",
+    "fotos": [
+      "fotos/2a768d80-9c08-11f1-8335-273cb6d9afd0_1787169504.jpg",
+      "fotos/2a768d80-9c08-11f1-8335-273cb6d9afd0_1787169549.jpg"
+    ]
+  },
+  {
+    "id": "7abfa480-9c07-11f1-9e14-fb0d21d7b38b",
+    "lat": -38.004914,
+    "lng": -57.558334,
+    "titulo": "Rawson y Catamarca, vereda de Catamarca del único edificio que hay en las 4 esquinas",
+    "direccion": "Rawson y Catamarca, vereda de Catamarca del único edificio que hay en las 4 esquinas",
+    "organismo": "Ammonites",
+    "autor": "@kari.dambo",
+    "fecha": "2026-08-19T19:52:16.000Z",
+    "fotos": [
+      "fotos/7abfa480-9c07-11f1-9e14-fb0d21d7b38b_1787169155.jpg",
+      "fotos/7abfa480-9c07-11f1-9e14-fb0d21d7b38b_1787169166.jpg"
+    ]
+  },
+  {
+    "id": "a7086c80-9c06-11f1-9e14-fb0d21d7b38b",
+    "lat": -34.555405,
+    "lng": -58.46781,
+    "titulo": "Iberá 2796",
+    "direccion": "Iberá 2796",
+    "organismo": "Ammonites",
+    "autor": "Sebastian/Norberto",
+    "fecha": "2026-08-19T19:46:21.000Z",
+    "fotos": [
+      "fotos/a7086c80-9c06-11f1-9e14-fb0d21d7b38b_1787168844.jpg",
+      "fotos/a7086c80-9c06-11f1-9e14-fb0d21d7b38b_1787168998.jpg",
+      "fotos/a7086c80-9c06-11f1-9e14-fb0d21d7b38b_1787169012.jpg"
+    ]
+  },
+  {
+    "id": "3fed9e30-9c06-11f1-9e14-fb0d21d7b38b",
+    "lat": -24.786753,
+    "lng": -65.399235,
+    "titulo": "Monumento a Güemes, en la roca",
+    "direccion": "Monumento a Güemes, en la roca",
+    "organismo": "Cruziana (trazas fósiles de artrópodos)",
+    "autor": "Diego Balseiro",
+    "fecha": "2026-08-19T19:43:28.000Z",
+    "fotos": [
+      "fotos/3fed9e30-9c06-11f1-9e14-fb0d21d7b38b_1787168614.jpg",
+      "fotos/3fed9e30-9c06-11f1-9e14-fb0d21d7b38b_1787168629.jpg"
+    ]
+  },
+  {
+    "id": "e4569dc0-9c04-11f1-9e14-fb0d21d7b38b",
+    "lat": -34.583399,
+    "lng": -58.536644,
+    "titulo": "Sanatorio Anchorena",
+    "direccion": "Sanatorio Anchorena",
+    "organismo": "Ammonites y Belemnites",
+    "autor": "@marinalescano24 (hallazgo de Andrea Concheyro)",
+    "fecha": "2026-08-19T19:33:44.000Z",
+    "fotos": [
+      "fotos/e4569dc0-9c04-11f1-9e14-fb0d21d7b38b_1787168033.jpg",
+      "fotos/e4569dc0-9c04-11f1-9e14-fb0d21d7b38b_1787168365.jpg",
+      "fotos/e4569dc0-9c04-11f1-9e14-fb0d21d7b38b_1787168393.jpg"
+    ]
+  },
+  {
+    "id": "6b94c470-9c04-11f1-9e14-fb0d21d7b38b",
+    "lat": -34.908993,
+    "lng": -57.935457,
+    "titulo": "Museo de La Plata, mesada del baño de mujeres",
+    "direccion": "Museo de La Plata, mesada del baño de mujeres",
+    "organismo": "Nummulites, gastrópodos y más",
+    "autor": "Aylén Aguado Büsser",
+    "fecha": "2026-08-19T19:30:22.000Z",
+    "fotos": [
+      "fotos/6b94c470-9c04-11f1-9e14-fb0d21d7b38b_1787167827.jpg",
+      "fotos/6b94c470-9c04-11f1-9e14-fb0d21d7b38b_1787167841.jpg",
+      "fotos/6b94c470-9c04-11f1-9e14-fb0d21d7b38b_1787167852.jpg"
+    ]
+  },
+  {
+    "id": "baae8330-9c03-11f1-9e14-fb0d21d7b38b",
+    "lat": -34.651147,
+    "lng": -59.431468,
+    "titulo": "Basílica Catedral Nuestra Señora de las Mercedes",
+    "direccion": "Basílica Catedral Nuestra Señora de las Mercedes",
+    "organismo": "Ammonites",
+    "autor": "Christian Giliberti",
+    "fecha": "2026-08-19T19:25:25.000Z",
+    "fotos": [
+      "fotos/baae8330-9c03-11f1-9e14-fb0d21d7b38b_1787167550.jpg",
+      "fotos/baae8330-9c03-11f1-9e14-fb0d21d7b38b_1787167563.jpg",
+      "fotos/baae8330-9c03-11f1-9e14-fb0d21d7b38b_1787167581.jpg"
+    ]
+  },
+  {
+    "id": "54575300-9c03-11f1-9e14-fb0d21d7b38b",
+    "lat": -34.61863,
+    "lng": -58.636337,
+    "titulo": "Origone 37, en el piso de la vereda",
+    "direccion": "Origone 37, en el piso de la vereda",
+    "organismo": "Ammonites",
+    "autor": "Alan Mazzalai",
+    "fecha": "2026-08-19T19:22:33.000Z",
+    "fotos": [
+      "fotos/54575300-9c03-11f1-9e14-fb0d21d7b38b_1787167363.jpg",
+      "fotos/54575300-9c03-11f1-9e14-fb0d21d7b38b_1787167378.jpg",
+      "fotos/54575300-9c03-11f1-9e14-fb0d21d7b38b_1787167390.jpg"
+    ]
+  },
+  {
+    "id": "dfbeaed0-9bf3-11f1-bac3-834e19e4d458",
+    "lat": -34.59118,
+    "lng": -58.387265,
+    "titulo": "Tea Connection, mesa de café",
+    "direccion": "Tea Connection, mesa de café",
+    "organismo": "Gastrópodo",
+    "autor": "@IniakiMartinez_",
+    "fecha": "2026-08-19T17:31:55.000Z",
+    "fotos": [
+      "fotos/dfbeaed0-9bf3-11f1-bac3-834e19e4d458_1787160718.jpg"
+    ]
+  },
+  {
+    "id": "79df94d0-9bf3-11f1-bac3-834e19e4d458",
+    "lat": -34.814357,
+    "lng": -58.46604,
+    "titulo": "Clínica Monte Grande, el fósil se encuentra en primer piso, consultorios de  pediatría, en una piedra en la pared de ventanillas de atención.",
+    "direccion": "Clínica Monte Grande, el fósil se encuentra en primer piso, consultorios de  pediatría, en una piedra en la pared de ventanillas de atención.",
+    "organismo": "Ammonites",
+    "autor": "Graciela Suárez",
+    "fecha": "2026-08-19T17:29:04.000Z",
+    "fotos": [
+      "fotos/79df94d0-9bf3-11f1-bac3-834e19e4d458_1787160563.jpg"
+    ]
+  },
+  {
+    "id": "e3c53860-9bf2-11f1-bac3-834e19e4d458",
+    "lat": -34.454169,
+    "lng": -58.567155,
+    "titulo": "Av Int. Arnoldi (casi Maipu)",
+    "direccion": "Av Int. Arnoldi (casi Maipu)",
+    "organismo": "Ammonites",
+    "autor": "@godoycristianadrian",
+    "fecha": "2026-08-19T17:24:53.000Z",
+    "fotos": [
+      "fotos/e3c53860-9bf2-11f1-bac3-834e19e4d458_1787160365.jpg"
+    ]
+  },
+  {
+    "id": "884b4060-9bf2-11f1-bac3-834e19e4d458",
+    "lat": -34.588835,
+    "lng": -58.412351,
+    "titulo": "Bulnes al 1900, en marco de puerta",
+    "direccion": "Bulnes al 1900, en marco de puerta",
+    "organismo": "Ammonites",
+    "autor": "@godoycristianadrian",
+    "fecha": "2026-08-19T17:22:19.000Z",
+    "fotos": [
+      "fotos/884b4060-9bf2-11f1-bac3-834e19e4d458_1787160186.jpg"
+    ]
+  },
+  {
+    "id": "42b20570-9bf2-11f1-bac3-834e19e4d458",
+    "lat": -34.617593,
+    "lng": -58.367968,
+    "titulo": "Facultad de Ingeniería",
+    "direccion": "Facultad de Ingeniería",
+    "organismo": "Ammonites",
+    "autor": "Miranda Lo Cicero y Victoria Aguilera; Maitena Marful",
+    "fecha": "2026-08-19T17:20:22.000Z",
+    "fotos": [
+      "fotos/42b20570-9bf2-11f1-bac3-834e19e4d458_1787160027.jpg",
+      "fotos/42b20570-9bf2-11f1-bac3-834e19e4d458_1787160047.jpg"
+    ]
+  },
+  {
+    "id": "51966370-9bf1-11f1-bac3-834e19e4d458",
+    "lat": -31.657506,
+    "lng": -60.70983,
+    "titulo": "Colegio de la Inmaculada Concepción, en el patio cerca de una fuente con peces",
+    "direccion": "Colegio de la Inmaculada Concepción, en el patio cerca de una fuente con peces",
+    "organismo": "Ammonites",
+    "autor": "@amid_ale",
+    "fecha": "2026-08-19T17:13:38.000Z",
+    "fotos": [
+      "fotos/51966370-9bf1-11f1-bac3-834e19e4d458_1787159721.jpg"
+    ]
+  },
+  {
+    "id": "1a5d45e0-9bf1-11f1-bac3-834e19e4d458",
+    "lat": -34.61315,
+    "lng": -58.37723,
+    "titulo": "Llavalle 4050. En el quincho del complejo de edificios",
+    "direccion": "Llavalle 4050. En el quincho del complejo de edificios",
+    "organismo": "Ammonites",
+    "autor": "@nanyrozo",
+    "fecha": "2026-08-19T17:12:05.000Z",
+    "fotos": [
+      "fotos/1a5d45e0-9bf1-11f1-bac3-834e19e4d458_1787159528.jpg"
+    ]
+  },
+  {
+    "id": "ef594070-9bd1-11f1-8aec-69e99d07bd51",
+    "lat": -34.588364,
+    "lng": -58.393654,
+    "titulo": "Cementerio Recoleta, sepulcro al lado de la tumba de Evita",
+    "direccion": "Cementerio Recoleta, sepulcro al lado de la tumba de Evita",
+    "organismo": "Corales solitarios",
+    "autor": "@polariscopi0",
+    "fecha": "2026-08-19T13:28:59.000Z",
+    "fotos": [
+      "fotos/ef594070-9bd1-11f1-8aec-69e99d07bd51_1787146141.jpg"
+    ]
+  },
+  {
+    "id": "a6008c80-9bd1-11f1-8aec-69e99d07bd51",
+    "lat": -34.592182,
+    "lng": -58.37374,
+    "titulo": "Torre de los Ingleses",
+    "direccion": "Torre de los Ingleses",
+    "organismo": "Bivalvos ostreidos",
+    "autor": "@blue.as.can.be",
+    "fecha": "2026-08-19T13:26:56.000Z",
+    "fotos": [
+      "fotos/a6008c80-9bd1-11f1-8aec-69e99d07bd51_1787146018.jpg",
+      "fotos/a6008c80-9bd1-11f1-8aec-69e99d07bd51_1787146025.jpg"
+    ]
+  },
+  {
+    "id": "53246400-9bd1-11f1-8aec-69e99d07bd51",
+    "lat": -34.546032,
+    "lng": -58.488379,
+    "titulo": "Shopping DOT",
+    "direccion": "Shopping DOT",
+    "organismo": "Ammonites y muchos gastrópodos grandes",
+    "autor": "EIV",
+    "fecha": "2026-08-19T13:24:37.000Z",
+    "fotos": [
+      "fotos/53246400-9bd1-11f1-8aec-69e99d07bd51_1787145879.jpg",
+      "fotos/53246400-9bd1-11f1-8aec-69e99d07bd51_1787145893.jpg",
+      "fotos/53246400-9bd1-11f1-8aec-69e99d07bd51_1787145899.jpg"
+    ]
+  },
+  {
+    "id": "ad675810-9bd0-11f1-8aec-69e99d07bd51",
+    "lat": -34.618844,
+    "lng": -58.368355,
+    "titulo": "Secretaría de Bioeconomía, sobre las baldosas de piedra en el Monumento a la Bandera.",
+    "direccion": "Secretaría de Bioeconomía, sobre las baldosas de piedra en el Monumento a la Bandera.",
+    "organismo": "Ammonites",
+    "autor": "Natalia Acosta",
+    "fecha": "2026-08-19T13:19:58.000Z",
+    "fotos": [
+      "fotos/ad675810-9bd0-11f1-8aec-69e99d07bd51_1787145684.jpg"
+    ]
+  },
+  {
+    "id": "5d035b80-9bd0-11f1-8aec-69e99d07bd51",
+    "lat": -34.571112,
+    "lng": -58.411716,
+    "titulo": "Sarmiento y Belisario Roldán",
+    "direccion": "Sarmiento y Belisario Roldán",
+    "organismo": "Ammonites",
+    "autor": "Ezequiel Racker",
+    "fecha": "2026-08-19T13:17:44.000Z",
+    "fotos": [
+      "fotos/5d035b80-9bd0-11f1-8aec-69e99d07bd51_1787145473.jpg"
+    ]
+  },
+  {
+    "id": "235ac490-9bd0-11f1-8aec-69e99d07bd51",
+    "lat": -34.570489,
+    "lng": -58.410959,
+    "titulo": "Planetario, en las veredas",
+    "direccion": "Planetario, en las veredas",
+    "organismo": "Ammonites",
+    "autor": "Melisa Suarez (IG @melisasofia87)",
+    "fecha": "2026-08-19T13:16:07.000Z",
+    "fotos": [
+      "fotos/235ac490-9bd0-11f1-8aec-69e99d07bd51_1787145369.jpg"
+    ]
+  },
+  {
+    "id": "fba97b80-9bcf-11f1-8aec-69e99d07bd51",
+    "lat": -34.570551,
+    "lng": -58.411839,
+    "titulo": "Planetario, en las baldosas exteriores",
+    "direccion": "Planetario, en las baldosas exteriores",
+    "organismo": "Ammonites",
+    "autor": "@paisajeante",
+    "fecha": "2026-08-19T13:15:00.000Z",
+    "fotos": [
+      "fotos/fba97b80-9bcf-11f1-8aec-69e99d07bd51_1787145303.jpg"
+    ]
+  },
+  {
+    "id": "a99e3790-9bcf-11f1-8aec-69e99d07bd51",
+    "lat": -34.608663,
+    "lng": -58.36961,
+    "titulo": "Museo de la Casa Rosada",
+    "direccion": "Museo de la Casa Rosada",
+    "organismo": "Corales y cefalópodos",
+    "autor": "Romina",
+    "fecha": "2026-08-19T13:12:43.000Z",
+    "fotos": [
+      "fotos/a99e3790-9bcf-11f1-8aec-69e99d07bd51_1787145166.jpg",
+      "fotos/a99e3790-9bcf-11f1-8aec-69e99d07bd51_1787145171.jpg"
+    ]
+  },
+  {
+    "id": "788abd90-9bcf-11f1-8aec-69e99d07bd51",
+    "lat": -34.625911,
+    "lng": -58.478927,
+    "titulo": "Morón 3422",
+    "direccion": "Morón 3422",
+    "organismo": "Ammonites",
+    "autor": "EIV",
+    "fecha": "2026-08-19T13:11:20.000Z",
+    "fotos": [
+      "fotos/788abd90-9bcf-11f1-8aec-69e99d07bd51_1787145084.jpg",
+      "fotos/788abd90-9bcf-11f1-8aec-69e99d07bd51_1787145088.jpg"
+    ]
+  },
+  {
+    "id": "7ed62e10-9bce-11f1-8aec-69e99d07bd51",
+    "lat": -34.610576,
+    "lng": -58.361591,
+    "titulo": "Hotel Alvear Icon, en las columnas de la entrada",
+    "direccion": "Hotel Alvear Icon, en las columnas de la entrada",
+    "organismo": "Ammonites y belemnites",
+    "autor": "EIV",
+    "fecha": "2026-08-19T13:04:21.000Z",
+    "fotos": [
+      "fotos/7ed62e10-9bce-11f1-8aec-69e99d07bd51_1787144664.jpg",
+      "fotos/7ed62e10-9bce-11f1-8aec-69e99d07bd51_1787144671.jpg",
+      "fotos/7ed62e10-9bce-11f1-8aec-69e99d07bd51_1787144677.jpg"
+    ]
+  },
+  {
+    "id": "f5bb74a0-9bcd-11f1-8aec-69e99d07bd51",
+    "lat": -34.599214,
+    "lng": -58.40008,
+    "titulo": "Hospital de Clínicas",
+    "direccion": "Hospital de Clínicas",
+    "organismo": "Ammonites, muchas ostras y otros bivalvos.",
+    "autor": "Fernando Aramayo",
+    "fecha": "2026-08-19T13:00:31.000Z",
+    "fotos": [
+      "fotos/f5bb74a0-9bcd-11f1-8aec-69e99d07bd51_1787144512.jpg",
+      "fotos/f5bb74a0-9bcd-11f1-8aec-69e99d07bd51_1787144528.jpg",
+      "fotos/f5bb74a0-9bcd-11f1-8aec-69e99d07bd51_1787144546.jpg"
+    ]
+  },
+  {
+    "id": "b5c762a0-9bcd-11f1-8aec-69e99d07bd51",
+    "lat": -34.583214,
+    "lng": -58.444771,
+    "titulo": "Heladería Scannapieco, en las mesas",
+    "direccion": "Heladería Scannapieco, en las mesas",
+    "organismo": "Foraminíferos grandes y caracoles (Gastropoda)",
+    "autor": "Victoria Keitelman (ig: @X__kv__X)",
+    "fecha": "2026-08-19T12:58:44.000Z",
+    "fotos": [
+      "fotos/b5c762a0-9bcd-11f1-8aec-69e99d07bd51_1787144326.jpg"
+    ]
+  },
+  {
+    "id": "6abd2e20-9bcd-11f1-8aec-69e99d07bd51",
+    "lat": -34.585215,
+    "lng": -58.481673,
+    "titulo": "Hamburgo y Andonaegui",
+    "direccion": "Hamburgo y Andonaegui",
+    "organismo": "Ammonites",
+    "autor": "@nachoquique",
+    "fecha": "2026-08-19T12:56:38.000Z",
+    "fotos": [
+      "fotos/6abd2e20-9bcd-11f1-8aec-69e99d07bd51_1787144214.jpg"
+    ]
+  },
+  {
+    "id": "0bb97320-9bcd-11f1-8aec-69e99d07bd51",
+    "lat": -34.560047,
+    "lng": -58.425593,
+    "titulo": "Club GEBA, en las baldosas de los pisos",
+    "direccion": "Club GEBA, en las baldosas de los pisos",
+    "organismo": "Ammonites",
+    "autor": "Felipe Martí",
+    "fecha": "2026-08-19T12:53:59.000Z",
+    "fotos": [
+      "fotos/0bb97320-9bcd-11f1-8aec-69e99d07bd51_1787144115.jpg"
+    ]
+  },
+  {
+    "id": "a869dda0-9bcc-11f1-8aec-69e99d07bd51",
+    "lat": -34.629062,
+    "lng": -58.423192,
+    "titulo": "Constitución 4178, en las baldosas de la entrada",
+    "direccion": "Constitución 4178, en las baldosas de la entrada",
+    "organismo": "Nummulites y caracoles",
+    "autor": "EIV",
+    "fecha": "2026-08-19T12:51:12.000Z",
+    "fotos": [
+      "fotos/a869dda0-9bcc-11f1-8aec-69e99d07bd51_1787143890.jpg",
+      "fotos/a869dda0-9bcc-11f1-8aec-69e99d07bd51_1787143897.jpg"
+    ]
+  },
+  {
+    "id": "08e82020-9bcc-11f1-8aec-69e99d07bd51",
+    "lat": -34.607474,
+    "lng": -58.373277,
+    "titulo": "Catedral Metropolitana",
+    "direccion": "Catedral Metropolitana",
+    "organismo": "Ammonite",
+    "autor": "Lucía Balarino",
+    "fecha": "2026-08-19T12:46:45.000Z",
+    "fotos": [
+      "fotos/08e82020-9bcc-11f1-8aec-69e99d07bd51_1787143697.jpg"
+    ]
+  },
+  {
+    "id": "bae93cb0-9bcb-11f1-8aec-69e99d07bd51",
+    "lat": -34.590232,
+    "lng": -58.429767,
+    "titulo": "Blest",
+    "direccion": "Blest",
+    "organismo": "Ammonites",
+    "autor": "@Cacahuetes_y_limones",
+    "fecha": "2026-08-19T12:44:34.000Z",
+    "fotos": [
+      "fotos/bae93cb0-9bcb-11f1-8aec-69e99d07bd51_1787143478.jpg",
+      "fotos/bae93cb0-9bcb-11f1-8aec-69e99d07bd51_1787143490.jpg"
+    ]
+  },
+  {
+    "id": "6b5b06b0-9bcb-11f1-8aec-69e99d07bd51",
+    "lat": -34.629385,
+    "lng": -58.463284,
+    "titulo": "Basílica San José de Flores, en las paredes",
+    "direccion": "Basílica San José de Flores, en las paredes",
+    "organismo": "Ammonites",
+    "autor": "Horacio Padula",
+    "fecha": "2026-08-19T12:42:20.000Z",
+    "fotos": [
+      "fotos/6b5b06b0-9bcb-11f1-8aec-69e99d07bd51_1787143344.jpg",
+      "fotos/6b5b06b0-9bcb-11f1-8aec-69e99d07bd51_1787143351.jpg",
+      "fotos/6b5b06b0-9bcb-11f1-8aec-69e99d07bd51_1787143358.jpg"
+    ]
+  },
+  {
+    "id": "28ffb8b0-9bcb-11f1-8aec-69e99d07bd51",
+    "lat": -34.618687,
+    "lng": -58.437665,
+    "titulo": "Av. Rivadavia 5097, en la entrada del edificio",
+    "direccion": "Av. Rivadavia 5097, en la entrada del edificio",
+    "organismo": "Gastrópodos",
+    "autor": "EIV",
+    "fecha": "2026-08-19T12:40:29.000Z",
+    "fotos": [
+      "fotos/28ffb8b0-9bcb-11f1-8aec-69e99d07bd51_1787143232.jpg",
+      "fotos/28ffb8b0-9bcb-11f1-8aec-69e99d07bd51_1787143242.jpg",
+      "fotos/28ffb8b0-9bcb-11f1-8aec-69e99d07bd51_1787143249.jpg"
+    ]
+  },
+  {
+    "id": "98b40630-9bca-11f1-8aec-69e99d07bd51",
+    "lat": -34.554144,
+    "lng": -58.450012,
+    "titulo": "Av. Del Libertador 6341, en las paredes del edificio",
+    "direccion": "Av. Del Libertador 6341, en las paredes del edificio",
+    "organismo": "Ammonites y Belemnites",
+    "autor": "Victoria Keitelman (ig: @X__kv__X)",
+    "fecha": "2026-08-19T12:36:27.000Z",
+    "fotos": [
+      "fotos/98b40630-9bca-11f1-8aec-69e99d07bd51_1787143004.jpg",
+      "fotos/98b40630-9bca-11f1-8aec-69e99d07bd51_1787143016.jpg",
+      "fotos/98b40630-9bca-11f1-8aec-69e99d07bd51_1787143026.jpg"
+    ]
+  },
+  {
+    "id": "38be9830-9bca-11f1-8aec-69e99d07bd51",
+    "lat": -34.654304,
+    "lng": -58.478658,
+    "titulo": "Av. Juan Bautista de La Salle 2081",
+    "direccion": "Av. Juan Bautista de La Salle 2081",
+    "organismo": "Ammonite",
+    "autor": "Francisco González Taboas",
+    "fecha": "2026-08-19T12:33:46.000Z",
+    "fotos": [
+      "fotos/38be9830-9bca-11f1-8aec-69e99d07bd51_1787142828.jpg"
+    ]
+  },
+  {
+    "id": "09db92c0-9bca-11f1-8aec-69e99d07bd51",
+    "lat": -34.602727,
+    "lng": -58.433147,
+    "titulo": "Ángel Gallardo 60, en las baldosas de la entrada del edificio",
+    "direccion": "Ángel Gallardo 60, en las baldosas de la entrada del edificio",
+    "organismo": "Caracoles (Gastropoda)",
+    "autor": "EIV",
+    "fecha": "2026-08-19T12:32:27.000Z",
+    "fotos": [
+      "fotos/09db92c0-9bca-11f1-8aec-69e99d07bd51_1787142750.jpg"
+    ]
+  },
+  {
+    "id": "7bc9f1c0-9bc9-11f1-8aec-69e99d07bd51",
+    "lat": -34.603036,
+    "lng": -58.43213,
+    "titulo": "Aníbal Troilo 950",
+    "direccion": "Aníbal Troilo 950",
+    "organismo": "Nummulites, corales y caracoles en las paredes del departamento",
+    "autor": "EIV",
+    "fecha": "2026-08-19T12:28:29.000Z",
+    "fotos": []
+  },
+  {
+    "id": "25b5cfc0-9bc9-11f1-8aec-69e99d07bd51",
+    "lat": -34.557237,
+    "lng": -58.412719,
+    "titulo": "Aeroparque Jorge Newbery, sector Arribos",
+    "direccion": "Aeroparque Jorge Newbery, sector Arribos",
+    "organismo": "Ammonoideos y belemnoideos",
+    "autor": "Victoria Keitelman (ig: X__kv__X)",
+    "fecha": "2026-08-19T12:26:04.000Z",
+    "fotos": [
+      "fotos/25b5cfc0-9bc9-11f1-8aec-69e99d07bd51_1787142386.jpg",
+      "fotos/25b5cfc0-9bc9-11f1-8aec-69e99d07bd51_1787142402.jpg"
+    ]
+  },
+  {
+    "id": "830fa0c0-9bc8-11f1-8637-43e9b5a98462",
+    "lat": -45.79018,
+    "lng": -67.468221,
+    "titulo": "Aeropuerto Internacional Enrique Mosconi",
+    "direccion": "Aeropuerto Internacional Enrique Mosconi",
+    "organismo": "Ammonoideos y belemnoideos",
+    "autor": "Andrea De Sosa Tomas, @Paleocriv",
+    "fecha": "2026-08-19T12:21:31.000Z",
+    "fotos": [
+      "fotos/830fa0c0-9bc8-11f1-8637-43e9b5a98462_1787142094.jpg"
+    ]
+  },
+  {
+    "id": "113d71c0-9bc8-11f1-8637-43e9b5a98462",
+    "lat": -34.702274,
+    "lng": -68.36785,
+    "titulo": "Plaza Yuma Félix, Placa Conmemorativa",
+    "direccion": "Plaza Yuma Félix, Placa Conmemorativa",
+    "organismo": "Nummulites",
+    "autor": "Soledad Vázquez e Ignacio Maniel",
+    "fecha": "2026-08-19T12:18:21.000Z",
+    "fotos": [
+      "fotos/113d71c0-9bc8-11f1-8637-43e9b5a98462_1787141945.jpg"
+    ]
+  },
+  {
+    "id": "8002a450-9bc7-11f1-8637-43e9b5a98462",
+    "lat": -39.028569,
+    "lng": -67.575123,
+    "titulo": "Jockey Club (Tucumán 782-732)",
+    "direccion": "Jockey Club (Tucumán 782-732)",
+    "organismo": "Las flechas negras indican ostras, las rojas gastrópodos. La flecha verde indica una conchilla que tiene perforaciones, si, como las de los caracoles de la playa que sirven para hacer un collar. (M. Tunik)",
+    "autor": "Maisa Tunik (@MaiTunik)",
+    "fecha": "2026-08-19T12:14:17.000Z",
+    "fotos": [
+      "fotos/8002a450-9bc7-11f1-8637-43e9b5a98462_1787141686.jpg",
+      "fotos/8002a450-9bc7-11f1-8637-43e9b5a98462_1787141698.jpg"
+    ]
+  },
+  {
+    "id": "0d44dcd0-9bc7-11f1-8637-43e9b5a98462",
+    "lat": -41.13791,
+    "lng": -71.313801,
+    "titulo": "Empanadas Oveja Negra",
+    "direccion": "Empanadas Oveja Negra",
+    "organismo": "Ammonite",
+    "autor": "Ezequiel Racker (@lechuzoologo)",
+    "fecha": "2026-08-19T12:11:04.000Z",
+    "fotos": [
+      "fotos/0d44dcd0-9bc7-11f1-8637-43e9b5a98462_1787141488.jpg"
+    ]
+  },
+  {
+    "id": "bce5e950-9bc6-11f1-8637-43e9b5a98462",
+    "lat": -41.113653,
+    "lng": -71.413976,
+    "titulo": "Centro Atómico Bariloche, en la entrada",
+    "direccion": "Centro Atómico Bariloche, en la entrada",
+    "organismo": "Ammonites",
+    "autor": "Kini Roesler (@kinipolegus)",
+    "fecha": "2026-08-19T12:08:50.000Z",
+    "fotos": [
+      "fotos/bce5e950-9bc6-11f1-8637-43e9b5a98462_1787141354.jpg",
+      "fotos/bce5e950-9bc6-11f1-8637-43e9b5a98462_1787141373.jpg"
+    ]
+  },
+  {
+    "id": "400b2c60-9bc6-11f1-8637-43e9b5a98462",
+    "lat": -31.646608,
+    "lng": -60.709971,
+    "titulo": "Plaza San Martín, en las rocas que rodean a la estatua de San Martín",
+    "direccion": "Plaza San Martín, en las rocas que rodean a la estatua de San Martín",
+    "organismo": "Ammonites",
+    "autor": "Sergio Godoy (ig @sergiogdy)",
+    "fecha": "2026-08-19T12:05:20.000Z",
+    "fotos": [
+      "fotos/400b2c60-9bc6-11f1-8637-43e9b5a98462_1787141138.jpg",
+      "fotos/400b2c60-9bc6-11f1-8637-43e9b5a98462_1787141161.jpg"
+    ]
+  },
+  {
+    "id": "d06cf460-9bc5-11f1-8637-43e9b5a98462",
+    "lat": -36.53801,
+    "lng": -56.68926,
+    "titulo": "Santa Teresita",
+    "direccion": "Santa Teresita",
+    "organismo": "Ammonite",
+    "autor": "Melisa Suarez (IG @melisasofia87)",
+    "fecha": "2026-08-19T12:02:13.000Z",
+    "fotos": [
+      "fotos/d06cf460-9bc5-11f1-8637-43e9b5a98462_1787140936.jpg"
+    ]
+  },
+  {
+    "id": "88565d60-9bc5-11f1-8637-43e9b5a98462",
+    "lat": -34.72407,
+    "lng": -58.255204,
+    "titulo": "Humberto Primo 220. En la pared, al lado del local de telas",
+    "direccion": "Humberto Primo 220. En la pared, al lado del local de telas",
+    "organismo": "Ammonite",
+    "autor": "Romina Pardo (IG: Bellavita 169)",
+    "fecha": "2026-08-19T12:00:12.000Z",
+    "fotos": [
+      "fotos/88565d60-9bc5-11f1-8637-43e9b5a98462_1787140827.jpg"
+    ]
+  },
+  {
+    "id": "d914a460-9bc4-11f1-8637-43e9b5a98462",
+    "lat": -34.412353,
+    "lng": -58.586451,
+    "titulo": "Costanera de Tigre, Victorica y M. Villegas de Martínez",
+    "direccion": "Costanera de Tigre, Victorica y M. Villegas de Martínez",
+    "organismo": "Ammonites",
+    "autor": "María Inés García",
+    "fecha": "2026-08-19T11:55:18.000Z",
+    "fotos": [
+      "fotos/d914a460-9bc4-11f1-8637-43e9b5a98462_1787140521.jpg"
+    ]
+  },
+  {
+    "id": "8e4de180-9bc4-11f1-8637-43e9b5a98462",
+    "lat": -34.100522,
+    "lng": -59.022069,
+    "titulo": "Castelli 867, en las piedras en la ventana",
+    "direccion": "Castelli 867, en las piedras en la ventana",
+    "organismo": "Ammonites",
+    "autor": "Juan Santoro (Instagram: @juanisantoro)",
+    "fecha": "2026-08-19T11:53:12.000Z",
+    "fotos": [
+      "fotos/8e4de180-9bc4-11f1-8637-43e9b5a98462_1787140420.jpg",
+      "fotos/8e4de180-9bc4-11f1-8637-43e9b5a98462_1787140430.jpg"
+    ]
+  },
+  {
+    "id": "0462dfc0-9bc4-11f1-8637-43e9b5a98462",
+    "lat": -37.998529,
+    "lng": -57.578023,
+    "titulo": "Alvarado al 4800, sobre las lajas en la vereda",
+    "direccion": "Alvarado al 4800, sobre las lajas en la vereda",
+    "organismo": "Ammonites",
+    "autor": "Francisco Barrios",
+    "fecha": "2026-08-19T11:49:21.000Z",
+    "fotos": [
+      "fotos/0462dfc0-9bc4-11f1-8637-43e9b5a98462_1787140236.jpg",
+      "fotos/0462dfc0-9bc4-11f1-8637-43e9b5a98462_1787140263.jpg"
+    ]
+  },
+  {
+    "id": "596008aa-9e59-4488-9263-c123ae2720e2",
+    "lat": -34.605029,
+    "lng": -58.437294,
+    "titulo": "Museo Argentino de Ciencias Naturales. Sala con Megaterio, en la baranda del entrepiso en la escalera",
+    "direccion": "Museo Argentino de Ciencias Naturales. Sala con Megaterio, en la baranda del entrepiso en la escalera",
+    "organismo": "Nummulites y erizo de mar (Echinoidea)",
+    "autor": "EIV, dato de Fede Agnolín",
+    "fecha": "2026-08-18T18:26:07.000Z",
+    "fotos": [
+      "fotos/596008aa-9e59-4488-9263-c123ae2720e2_1787077477.jpg",
+      "fotos/596008aa-9e59-4488-9263-c123ae2720e2_1787077487.jpg"
+    ]
+  },
+  {
+    "id": "da33dd67-36f2-4ad1-bd93-ef12f7a7cb80",
+    "lat": -34.598778,
+    "lng": -58.399889,
+    "titulo": "Hospital de Clínicas, en la pared en la admisión de dermatología",
+    "direccion": "Hospital de Clínicas, en la pared en la admisión de dermatología",
+    "organismo": "Rudista?",
+    "autor": "Karina Benítez",
+    "fecha": "2026-08-13T20:10:04.000Z",
+    "fotos": [
+      "fotos/da33dd67-36f2-4ad1-bd93-ef12f7a7cb80_1786651617.jpg",
+      "fotos/da33dd67-36f2-4ad1-bd93-ef12f7a7cb80_1786651623.jpg"
+    ]
+  },
+  {
+    "id": "b5c54699-0734-4c6b-ae2b-507630e6a28f",
+    "lat": -34.605129,
+    "lng": -58.389328,
+    "titulo": "Hotel Europlaza",
+    "direccion": "Hotel Europlaza",
+    "organismo": "Ammonite. Está feo",
+    "autor": "EIV",
+    "fecha": "2026-07-30T17:22:41.000Z",
+    "fotos": [
+      "fotos/b5c54699-0734-4c6b-ae2b-507630e6a28f_1785432100.jpg"
+    ]
+  },
+  {
+    "id": "c79033e4-f59b-44ac-a4ba-918808b7fcc8",
+    "lat": -34.50754,
+    "lng": -58.524729,
+    "titulo": "Shopping Unicenter, en las baldosas rojas del último piso",
+    "direccion": "Shopping Unicenter, en las baldosas rojas del último piso",
+    "organismo": "Ammonites",
+    "autor": "EIV",
+    "fecha": "2026-07-20T16:15:25.000Z",
+    "fotos": [
+      "fotos/c79033e4-f59b-44ac-a4ba-918808b7fcc8_1784564079.jpg",
+      "fotos/c79033e4-f59b-44ac-a4ba-918808b7fcc8_1784564085.jpg",
+      "fotos/c79033e4-f59b-44ac-a4ba-918808b7fcc8_1784565638.jpg"
+    ]
+  },
+  {
+    "id": "8a5e3320-811d-11f1-835c-3f59622c502f",
+    "lat": -38.879843,
+    "lng": -71.183855,
+    "titulo": "Estación de la Montaña, en las piedras de la vereda",
+    "direccion": "Estación de la Montaña, en las piedras de la vereda",
+    "organismo": "Estrella de mar. ¡Locura total!",
+    "autor": "@maitunik",
+    "fecha": "2026-07-16T13:52:10.000Z",
+    "fotos": [
+      "fotos/8a5e3320-811d-11f1-835c-3f59622c502f_1784210034.jpg",
+      "fotos/8a5e3320-811d-11f1-835c-3f59622c502f_1784210048.jpg"
+    ]
+  },
+  {
+    "id": "37b915a0-811c-11f1-835c-3f59622c502f",
+    "lat": -34.594842,
+    "lng": -58.375656,
+    "titulo": "Plaza San Martín, en el piso cerca del mástil",
+    "direccion": "Plaza San Martín, en el piso cerca del mástil",
+    "organismo": "Ammonites",
+    "autor": "EIV",
+    "fecha": "2026-07-16T13:42:41.000Z",
+    "fotos": [
+      "fotos/37b915a0-811c-11f1-835c-3f59622c502f_1784209365.jpg"
+    ]
+  },
+  {
+    "id": "cdf26130-811b-11f1-835c-3f59622c502f",
+    "lat": -34.601086,
+    "lng": -58.383187,
+    "titulo": "Teatro Colón",
+    "direccion": "Teatro Colón",
+    "organismo": "Hay muchos fósiles. En el foyer principal hay rocas con ammonites en las columnas y en las escaleras; en las paredes de la sala principal está lleno de bivalvos rudistas, y también hay bivalvos en diferentes superficies horizontales castaño oscuras, como algunos canastos de basura o mesas.",
+    "autor": "EIV",
+    "fecha": "2026-07-16T13:39:44.000Z",
+    "fotos": [
+      "fotos/cdf26130-811b-11f1-835c-3f59622c502f_1784209192.jpg",
+      "fotos/cdf26130-811b-11f1-835c-3f59622c502f_1784209199.jpg",
+      "fotos/cdf26130-811b-11f1-835c-3f59622c502f_1784209207.jpg"
+    ]
+  },
+  {
+    "id": "c2dc3420-811a-11f1-a37f-f578fd0394d0",
+    "lat": -34.609541,
+    "lng": -58.374504,
+    "titulo": "Legislatura de la Ciudad de Buenos Aires, en los pisos",
+    "direccion": "Legislatura de la Ciudad de Buenos Aires, en los pisos",
+    "organismo": "Corales, bivalvos y gastrópodos",
+    "autor": "EIV",
+    "fecha": "2026-07-16T13:32:16.000Z",
+    "fotos": [
+      "fotos/c2dc3420-811a-11f1-a37f-f578fd0394d0_1784208780.jpg",
+      "fotos/c2dc3420-811a-11f1-a37f-f578fd0394d0_1784208788.jpg",
+      "fotos/c2dc3420-811a-11f1-a37f-f578fd0394d0_1784208794.jpg"
+    ]
+  },
+  {
+    "id": "ee2b32d0-8119-11f1-b74f-7bccfbbd2124",
+    "lat": -34.617466,
+    "lng": -58.430237,
+    "titulo": "Senillosa 111, en las paredes del edificio",
+    "direccion": "Senillosa 111, en las paredes del edificio",
+    "organismo": "Gastrópodos varios y bivalvos principalmente",
+    "autor": "EIV",
+    "fecha": "2026-07-16T13:26:19.000Z",
+    "fotos": [
+      "fotos/ee2b32d0-8119-11f1-b74f-7bccfbbd2124_1784208388.jpg",
+      "fotos/ee2b32d0-8119-11f1-b74f-7bccfbbd2124_1784208395.jpg",
+      "fotos/ee2b32d0-8119-11f1-b74f-7bccfbbd2124_1784208401.jpg"
+    ]
+  },
+  {
+    "id": "c21f1090-8118-11f1-9d18-17b940ec1ddc",
+    "lat": -34.556839,
+    "lng": -58.450677,
+    "titulo": "Restaurant China Rose, en las paredes de los baños",
+    "direccion": "Restaurant China Rose, en las paredes de los baños",
+    "organismo": "Nummulites, gastrópodos y corales",
+    "autor": "EIV",
+    "fecha": "2026-07-16T13:17:56.000Z",
+    "fotos": [
+      "fotos/c21f1090-8118-11f1-9d18-17b940ec1ddc_1784207902.jpg",
+      "fotos/c21f1090-8118-11f1-9d18-17b940ec1ddc_1784207914.jpg"
+    ]
+  },
+  {
+    "id": "916c49a0-8117-11f1-8cfc-f1b6faa2fc19",
+    "lat": -34.610615,
+    "lng": -58.48133,
+    "titulo": "Pasaje José Ingenieros 2870",
+    "direccion": "Pasaje José Ingenieros 2870",
+    "organismo": "Gastrópodos y bivalvos principalmente",
+    "autor": "EIV",
+    "fecha": "2026-07-16T13:09:24.000Z",
+    "fotos": [
+      "fotos/916c49a0-8117-11f1-8cfc-f1b6faa2fc19_1784207372.jpg"
+    ]
+  },
+  {
+    "id": "461bd9d0-8116-11f1-8756-21fae8299584",
+    "lat": -34.627019,
+    "lng": -58.458027,
+    "titulo": "Restaurant Fiamma, en las paredes exteriores",
+    "direccion": "Restaurant Fiamma, en las paredes exteriores",
+    "organismo": "Corales, gastrópodos y Nummulites",
+    "autor": "EIV",
+    "fecha": "2026-07-16T13:00:09.000Z",
+    "fotos": [
+      "fotos/461bd9d0-8116-11f1-8756-21fae8299584_1784206856.jpg"
+    ]
+  }
+];
