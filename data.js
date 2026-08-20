@@ -1,5 +1,18 @@
 const fosiles = [
   {
+    "id": "3604e7d0-9cb9-11f1-bf30-397ece257981",
+    "lat": -34.753052,
+    "lng": -58.402616,
+    "titulo": "Manuel Castro y Juan José Castelli",
+    "direccion": "Manuel Castro y Juan José Castelli",
+    "organismo": "Ammonites",
+    "autor": "Makaya_23",
+    "fecha": "2026-08-20T17:04:31.000Z",
+    "fotos": [
+      "fotos/3604e7d0-9cb9-11f1-bf30-397ece257981_1787245477.jpg"
+    ]
+  },
+  {
     "id": "f94f2d60-9cb7-11f1-bf30-397ece257981",
     "lat": -39.518023,
     "lng": -69.29576,
