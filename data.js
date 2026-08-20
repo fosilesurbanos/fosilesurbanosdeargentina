@@ -1,5 +1,60 @@
 const fosiles = [
   {
+    "id": "f94f2d60-9cb7-11f1-bf30-397ece257981",
+    "lat": -39.518023,
+    "lng": -69.29576,
+    "titulo": "Parador Creo en Dios, en el piso enfrente",
+    "direccion": "Parador Creo en Dios, en el piso enfrente",
+    "organismo": "Ammonites",
+    "autor": "Juan Herrera @jumherrera.bsky.social",
+    "fecha": "2026-08-20T16:55:40.000Z",
+    "fotos": [
+      "fotos/f94f2d60-9cb7-11f1-bf30-397ece257981_1787245049.jpg",
+      "fotos/f94f2d60-9cb7-11f1-bf30-397ece257981_1787245060.jpg",
+      "fotos/f94f2d60-9cb7-11f1-bf30-397ece257981_1787245071.jpg"
+    ]
+  },
+  {
+    "id": "6351f5e0-9cb7-11f1-bf30-397ece257981",
+    "lat": -35.180213,
+    "lng": -59.093387,
+    "titulo": "Arenales 376",
+    "direccion": "Arenales 376",
+    "organismo": "Ammonites",
+    "autor": "@jarroyosi (Juan Arroyo)",
+    "fecha": "2026-08-20T16:51:28.000Z",
+    "fotos": [
+      "fotos/6351f5e0-9cb7-11f1-bf30-397ece257981_1787244694.jpg"
+    ]
+  },
+  {
+    "id": "c4c6cd60-9cb6-11f1-bf30-397ece257981",
+    "lat": -34.567904,
+    "lng": -58.468289,
+    "titulo": "Melián 2175, en las paredes de una casa",
+    "direccion": "Melián 2175, en las paredes de una casa",
+    "organismo": "Ammonites",
+    "autor": "Jose",
+    "fecha": "2026-08-20T16:47:02.000Z",
+    "fotos": [
+      "fotos/c4c6cd60-9cb6-11f1-bf30-397ece257981_1787244512.jpg"
+    ]
+  },
+  {
+    "id": "ed43b5c0-9cb4-11f1-bf30-397ece257981",
+    "lat": -34.791779,
+    "lng": -58.405907,
+    "titulo": "Gral Jose Matias Zapiola 555, casi llegando a la esquina. Paredón blanco y vereda de piedra. Estaba en la vereda",
+    "direccion": "Gral Jose Matias Zapiola 555, casi llegando a la esquina. Paredón blanco y vereda de piedra. Estaba en la vereda",
+    "organismo": "Ammonites",
+    "autor": "Agustina Alleva",
+    "fecha": "2026-08-20T16:33:51.000Z",
+    "fotos": [
+      "fotos/ed43b5c0-9cb4-11f1-bf30-397ece257981_1787244105.jpg",
+      "fotos/ed43b5c0-9cb4-11f1-bf30-397ece257981_1787244117.jpg"
+    ]
+  },
+  {
     "id": "5e4f6170-9caa-11f1-8f75-816238ff37c4",
     "lat": -40.160777,
     "lng": -71.350675,
