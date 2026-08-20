@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fósiles Urbanos de Argentina</title>
+
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+<!-- Leaflet MarkerCluster CSS (agrupa marcadores cercanos) -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>🦴 Fósiles Urbanos de Argentina</h1>
+  <p>Un mapa colaborativo de fósiles encontrados en construcciones y espacios urbanos</p>
+</header>
+
+<div id="map"></div>
+
+<footer>
+  Datos recolectados con <a href="https://five.epicollect.net/" target="_blank" rel="noopener">Epicollect5</a> ·
+  Mapa hecho con <a href="https://leafletjs.com/" target="_blank" rel="noopener">Leaflet</a>
+</footer>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+<!-- Datos y lógica -->
+<script src="data.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

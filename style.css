@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+header {
+  background: #3a2f28;
+  color: #f5efe6;
+  padding: 14px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 4px 0;
+  font-size: 1.4rem;
+}
+
+header p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #d8cdbd;
+}
+
+#map {
+  width: 100%;
+  height: calc(100vh - 96px);
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 6px;
+  background: #3a2f28;
+  color: #d8cdbd;
+}
+
+footer a {
+  color: #f5efe6;
+}
+
+/* Popup con fotos */
+.popup-content {
+  max-width: 260px;
+}
+
+.popup-content h3 {
+  margin: 0 0 4px 0;
+  font-size: 1rem;
+}
+
+.popup-content .organismo {
+  display: inline-block;
+  background: #eadfce;
+  color: #5c4a34;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+}
+
+.popup-content .direccion {
+  font-size: 0.85rem;
+  color: #444;
+  margin: 4px 0;
+}
+
+.popup-content .autor {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.popup-fotos {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.popup-fotos img {
+  width: 76px;
+  height: 76px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+/* Icono de marcador personalizado */
+.fosil-icon {
+  background: #8a6d4a;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
