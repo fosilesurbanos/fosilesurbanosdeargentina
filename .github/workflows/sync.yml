@@ -1,0 +1,33 @@
+name: Sincronizar Epicollect
+
+on:
+  schedule:
+    # Se ejecuta al minuto 0 de cada hora
+    - cron: '0 * * * *'
+  workflow_dispatch: # Permite ejecutarlo manualmente desde GitHub
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Instalar dependencias
+        run: |
+          pip install requests pillow
+
+      - name: Ejecutar sincronización
+        run: python sync.py
+
+      - name: Guardar cambios en el repositorio
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data.js fotos/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update registros y fotos desde Epicollect" && git push)
