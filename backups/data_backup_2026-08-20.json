@@ -1,5 +1,19 @@
 [
   {
+    "id": "a1d4a0c0-9cbb-11f1-8e37-074dae8d6646",
+    "lat": -34.681092,
+    "lng": -58.358121,
+    "titulo": "Hospital Presidente Perón, servicio de cirugía y quirófano",
+    "direccion": "Hospital Presidente Perón, servicio de cirugía y quirófano",
+    "organismo": "Ammonites",
+    "autor": "Martín Sosa (ig: Martinsosa05)",
+    "fecha": "2026-08-20T17:21:51.000Z",
+    "fotos": [
+      "fotos/a1d4a0c0-9cbb-11f1-8e37-074dae8d6646_1787246522.jpg",
+      "fotos/a1d4a0c0-9cbb-11f1-8e37-074dae8d6646_1787246533.jpg"
+    ]
+  },
+  {
     "id": "3604e7d0-9cb9-11f1-bf30-397ece257981",
     "lat": -34.753052,
     "lng": -58.402616,
