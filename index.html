@@ -8,7 +8,7 @@
 <!-- Leaflet CSS -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
-<!-- Leaflet MarkerCluster CSS (agrupa marcadores cercanos) -->
+<!-- Leaflet MarkerCluster CSS -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
 
@@ -20,6 +20,23 @@
   <h1>🦴 Fósiles Urbanos de Argentina</h1>
   <p>Un mapa colaborativo de fósiles encontrados en construcciones y espacios urbanos</p>
 </header>
+
+<div id="panel-filtros">
+  <button id="toggle-panel">🔍 Filtros</button>
+  <div id="contenido-filtros" class="oculto">
+    <h3>Filtrar Fósiles</h3>
+    
+    <label for="filtro-organismo">Organismo:</label>
+    <select id="filtro-organismo">
+      <option value="todos">Todos los organismos</option>
+    </select>
+
+    <label for="filtro-autor">Autor:</label>
+    <select id="filtro-autor">
+      <option value="todos">Todos los autores</option>
+    </select>
+  </div>
+</div>
 
 <div id="map"></div>
 
