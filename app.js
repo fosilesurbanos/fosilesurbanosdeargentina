@@ -46,7 +46,7 @@ const logoControl = L.control({ position: 'bottomleft' });
 
 logoControl.onAdd = function(map) {
   const div = L.DomUtil.create('div', 'map-logo-container');
-  div.innerHTML = `<img src="logoapa.png" alt="Logo APA" style="height: 45px; width: auto; display: block;">`;
+  div.innerHTML = `<img src="logoapa.png" alt="Logo APA" style="height: 90px; width: auto; display: block;">`;
   return div;
 };
 
