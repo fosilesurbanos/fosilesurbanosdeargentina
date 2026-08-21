@@ -1,5 +1,97 @@
 [
   {
+    "id": "6f7d9a70-9d90-11f1-9821-47403b72a036",
+    "lat": -34.7608,
+    "lng": -58.424029,
+    "titulo": "Catamarca 299\nEn la esquina entre Catamarca y Colombres, ubicado en el piso",
+    "direccion": "Catamarca 299\nEn la esquina entre Catamarca y Colombres, ubicado en el piso",
+    "organismo": "Ammonitida",
+    "autor": "@RocioPMilone",
+    "fecha": "2026-08-21T18:45:09.000Z",
+    "fotos": []
+  },
+  {
+    "id": "d297bd80-9d8f-11f1-9821-47403b72a036",
+    "lat": -34.554704,
+    "lng": -58.484548,
+    "titulo": "Panadería 9 de Julio\n\nAv. Dr. Ricardo Balbín 3837\nFrente al mostrador donde se piden los panes.",
+    "direccion": "Panadería 9 de Julio\n\nAv. Dr. Ricardo Balbín 3837\nFrente al mostrador donde se piden los panes.",
+    "organismo": "Caracol (Gastropoda)",
+    "autor": "Marcos Perez @darkmortem instagram",
+    "fecha": "2026-08-21T18:40:46.000Z",
+    "fotos": [
+      "fotos/d297bd80-9d8f-11f1-9821-47403b72a036_1787337718.jpg"
+    ]
+  },
+  {
+    "id": "285e7840-9d8f-11f1-9821-47403b72a036",
+    "lat": -34.855702,
+    "lng": -58.50401,
+    "titulo": "Toscas Shopping\n\nEn las escaleras de la entrada, por calle Formosa",
+    "direccion": "Toscas Shopping\n\nEn las escaleras de la entrada, por calle Formosa",
+    "organismo": "Ammonites",
+    "autor": "@santiagopaleka",
+    "fecha": "2026-08-21T18:36:00.000Z",
+    "fotos": [
+      "fotos/285e7840-9d8f-11f1-9821-47403b72a036_1787337365.jpg"
+    ]
+  },
+  {
+    "id": "c86fdd80-9d8d-11f1-abd4-774f39664672",
+    "lat": -34.642275,
+    "lng": -58.481277,
+    "titulo": "Av. Directorio 4059",
+    "direccion": "Av. Directorio 4059",
+    "organismo": "Ammonitida",
+    "autor": "Mariela Rivas",
+    "fecha": "2026-08-21T18:26:10.000Z",
+    "fotos": [
+      "fotos/c86fdd80-9d8d-11f1-abd4-774f39664672_1787336849.jpg",
+      "fotos/c86fdd80-9d8d-11f1-abd4-774f39664672_1787336866.jpg"
+    ]
+  },
+  {
+    "id": "67ce7810-9d8d-11f1-abd4-774f39664672",
+    "lat": -34.167449,
+    "lng": -58.95974,
+    "titulo": "Heladería La Real, sucursal de Av. Rivadavia 573\n\nEn el mármol del mostrador",
+    "direccion": "Heladería La Real, sucursal de Av. Rivadavia 573\n\nEn el mármol del mostrador",
+    "organismo": "Ammonitida",
+    "autor": "Julián Di Benedetto",
+    "fecha": "2026-08-21T18:23:28.000Z",
+    "fotos": [
+      "fotos/67ce7810-9d8d-11f1-abd4-774f39664672_1787336618.jpg"
+    ]
+  },
+  {
+    "id": "881202a0-9d8c-11f1-abd4-774f39664672",
+    "lat": -37.336879,
+    "lng": -57.024691,
+    "titulo": "Alojamiento Altaplaya\n\nEn las habitaciones",
+    "direccion": "Alojamiento Altaplaya\n\nEn las habitaciones",
+    "organismo": "Ammonites",
+    "autor": "-",
+    "fecha": "2026-08-21T18:17:12.000Z",
+    "fotos": [
+      "fotos/881202a0-9d8c-11f1-abd4-774f39664672_1787336314.jpg",
+      "fotos/881202a0-9d8c-11f1-abd4-774f39664672_1787336330.jpg"
+    ]
+  },
+  {
+    "id": "3364cb00-9d89-11f1-abd4-774f39664672",
+    "lat": -34.625163,
+    "lng": -58.417614,
+    "titulo": "Colombres 960\n\nEn las paredes exteriores del edificio",
+    "direccion": "Colombres 960\n\nEn las paredes exteriores del edificio",
+    "organismo": "Cefalópodos Ortocéridos (Orthocerida) y Goniatitida (Ammonoidea)",
+    "autor": "Daniel Ruozi",
+    "fecha": "2026-08-21T17:53:22.000Z",
+    "fotos": [
+      "fotos/3364cb00-9d89-11f1-abd4-774f39664672_1787335723.jpg",
+      "fotos/3364cb00-9d89-11f1-abd4-774f39664672_1787335742.jpg"
+    ]
+  },
+  {
     "id": "0801d084-73c8-4725-bab7-c272673c3e39",
     "lat": -34.6226,
     "lng": -58.4371,
@@ -515,10 +607,11 @@
     "titulo": "Club GEBA, en las baldosas de los pisos",
     "direccion": "Club GEBA, en las baldosas de los pisos",
     "organismo": "Ammonites",
-    "autor": "Felipe Martí",
+    "autor": "Felipe Martí\njperesson",
     "fecha": "2026-08-19T12:53:59.000Z",
     "fotos": [
-      "fotos/0bb97320-9bcd-11f1-8aec-69e99d07bd51_1787144115.jpg"
+      "fotos/0bb97320-9bcd-11f1-8aec-69e99d07bd51_1787144115.jpg",
+      "fotos/0bb97320-9bcd-11f1-8aec-69e99d07bd51_1787337042.jpg"
     ]
   },
   {
