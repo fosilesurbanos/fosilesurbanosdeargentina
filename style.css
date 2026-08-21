@@ -242,7 +242,7 @@ select:hover, button:hover, .filter-btn:hover {
 
 /* Imagen del logo APA */
 .logo-apa-img {
-  height: 90px;
+  height: 80px;
   width: auto;
   display: block;
   transition: transform 0.2s ease;
