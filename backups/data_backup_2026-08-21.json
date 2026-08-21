@@ -1,5 +1,76 @@
 [
   {
+    "id": "d838d8b0-9d98-11f1-9821-47403b72a036",
+    "lat": -34.632793,
+    "lng": -58.406303,
+    "titulo": "Garro 3012",
+    "direccion": "Garro 3012",
+    "organismo": "Corales",
+    "autor": "Leandro, Enzo y Vera",
+    "fecha": "2026-08-21T19:45:21.000Z",
+    "fotos": [
+      "fotos/d838d8b0-9d98-11f1-9821-47403b72a036_1787341582.jpg"
+    ]
+  },
+  {
+    "id": "b05aa8b0-9d97-11f1-9821-47403b72a036",
+    "lat": -34.446906,
+    "lng": -58.867621,
+    "titulo": "Shopping Palmas del Pilar\n\nEn los pisos",
+    "direccion": "Shopping Palmas del Pilar\n\nEn los pisos",
+    "organismo": "Ammonitida",
+    "autor": "Twitter: monstera_yummy",
+    "fecha": "2026-08-21T19:37:04.000Z",
+    "fotos": [
+      "fotos/b05aa8b0-9d97-11f1-9821-47403b72a036_1787341033.jpg",
+      "fotos/b05aa8b0-9d97-11f1-9821-47403b72a036_1787341053.jpg"
+    ]
+  },
+  {
+    "id": "31c877c0-9d97-11f1-9821-47403b72a036",
+    "lat": -34.623769,
+    "lng": -58.367213,
+    "titulo": "Santander Edificio Garay\n\nEstán en todos los pisos desde Planta Baja hasta el piso 11, inclusive en la escalera helicoidal de Planta Baja.",
+    "direccion": "Santander Edificio Garay\n\nEstán en todos los pisos desde Planta Baja hasta el piso 11, inclusive en la escalera helicoidal de Planta Baja.",
+    "organismo": "Ammonitida y Belemnitida",
+    "autor": "Ig @feraramayo",
+    "fecha": "2026-08-21T19:33:32.000Z",
+    "fotos": [
+      "fotos/31c877c0-9d97-11f1-9821-47403b72a036_1787340817.jpg",
+      "fotos/31c877c0-9d97-11f1-9821-47403b72a036_1787340892.jpg"
+    ]
+  },
+  {
+    "id": "324b31c0-9d96-11f1-9821-47403b72a036",
+    "lat": -34.273655,
+    "lng": -58.898997,
+    "titulo": "Hotel Sofitel Cardales",
+    "direccion": "Hotel Sofitel Cardales",
+    "organismo": "Ammonitida",
+    "autor": "Anabella Fassiano",
+    "fecha": "2026-08-21T19:26:23.000Z",
+    "fotos": [
+      "fotos/324b31c0-9d96-11f1-9821-47403b72a036_1787340567.jpg",
+      "fotos/324b31c0-9d96-11f1-9821-47403b72a036_1787340586.jpg",
+      "fotos/324b31c0-9d96-11f1-9821-47403b72a036_1787340599.jpg"
+    ]
+  },
+  {
+    "id": "7f2a42c0-9d95-11f1-9821-47403b72a036",
+    "lat": -34.603893,
+    "lng": -58.379726,
+    "titulo": "Confitería La Ideal\n\nEn planta baja",
+    "direccion": "Confitería La Ideal\n\nEn planta baja",
+    "organismo": "Ammonitida y Belemnitida",
+    "autor": "Camilo Cibils Farmelo\nWaldo Péndola @just.a.walrus",
+    "fecha": "2026-08-21T19:21:23.000Z",
+    "fotos": [
+      "fotos/7f2a42c0-9d95-11f1-9821-47403b72a036_1787340167.jpg",
+      "fotos/7f2a42c0-9d95-11f1-9821-47403b72a036_1787340180.jpg",
+      "fotos/7f2a42c0-9d95-11f1-9821-47403b72a036_1787340335.jpg"
+    ]
+  },
+  {
     "id": "8979af50-9d94-11f1-9821-47403b72a036",
     "lat": -31.424328,
     "lng": -64.185805,
@@ -552,10 +623,12 @@
     "titulo": "Planetario, en las veredas",
     "direccion": "Planetario, en las veredas",
     "organismo": "Ammonites",
-    "autor": "Melisa Suarez (IG @melisasofia87)",
+    "autor": "Melisa Suarez (IG @melisasofia87)\nFlavio de Souza - @FSJSouza",
     "fecha": "2026-08-19T13:16:07.000Z",
     "fotos": [
-      "fotos/235ac490-9bd0-11f1-8aec-69e99d07bd51_1787145369.jpg"
+      "fotos/235ac490-9bd0-11f1-8aec-69e99d07bd51_1787145369.jpg",
+      "fotos/235ac490-9bd0-11f1-8aec-69e99d07bd51_1787341294.jpg",
+      "fotos/235ac490-9bd0-11f1-8aec-69e99d07bd51_1787341317.jpg"
     ]
   },
   {
