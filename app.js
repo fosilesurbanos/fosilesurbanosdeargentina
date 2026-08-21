@@ -90,26 +90,47 @@ function normalizarOrganismos(texto) {
   const t = texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
   const grupos = [];
 
+  // Ammonites
   if (t.includes("ammonit") || t.includes("ammono") || t.includes("ammonoid")) {
-    grupos.push("Ammonites");
+    grupos.push("Ammonitida");
   }
+
+  // Orthocerida (NUEVO)
+  if (t.includes("orthocer") || t.includes("ortocer") || t.includes("ortocerad")) {
+    grupos.push("Orthocerida");
+  }
+
+  // Goniatitida (NUEVO)
+  if (t.includes("goniatit") || t.includes("goniat")) {
+    grupos.push("Goniatitida");
+  }
+
+  // Gastrópodos
   if (t.includes("gastropod") || t.includes("caracol") || t.includes("gastro")) {
-    grupos.push("Gastrópodos");
+    grupos.push("Gastropoda");
   }
+
+  // Bivalvos / Ostras
   if (t.includes("bivalv") || t.includes("ostra") || t.includes("rudista")) {
-    grupos.push("Bivalvos / Ostras");
+    grupos.push("Bivalvia");
   }
+
+  // Corales
   if (t.includes("coral")) {
     grupos.push("Corales");
   }
+
+  // Nummulites / Foraminíferos
   if (t.includes("nummulit") || t.includes("foramin")) {
-    grupos.push("Nummulites / Foraminíferos");
+    grupos.push("Nummulites");
   }
+
+  // Belemnites
   if (t.includes("belemn") || t.includes("belemno")) {
     grupos.push("Belemnites");
   }
   
-  // Grupo Equinodermos (Erizos, Estrellas, Dólares de arena, Crinoideos, etc.)
+  // Equinodermos (Erizos, Estrellas, Dólares de arena, Crinoideos, etc.)
   if (
     t.includes("erizo") || t.includes("estrella") || t.includes("dolar") || 
     t.includes("echino") || t.includes("astero") || t.includes("ophiuro") || 
@@ -118,6 +139,7 @@ function normalizarOrganismos(texto) {
     grupos.push("Equinodermos");
   }
 
+  // Trazas fósiles
   if (t.includes("traza") || t.includes("cruziana")) {
     grupos.push("Trazas fósiles");
   }
