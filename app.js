@@ -41,6 +41,17 @@ const baseMaps = {
 
 L.control.layers(baseMaps).addTo(map);
 
+// --- LOGO APA ABAJO A LA IZQUIERDA ---
+const logoControl = L.control({ position: 'bottomleft' });
+
+logoControl.onAdd = function(map) {
+  const div = L.DomUtil.create('div', 'map-logo-container');
+  div.innerHTML = `<img src="logoapa.png" alt="Logo APA" style="height: 45px; width: auto; display: block;">`;
+  return div;
+};
+
+logoControl.addTo(map);
+
 // Icono personalizado
 const fosilIcon = L.divIcon({
   className: '',
