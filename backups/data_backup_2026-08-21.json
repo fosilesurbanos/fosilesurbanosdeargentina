@@ -1,5 +1,60 @@
 [
   {
+    "id": "8979af50-9d94-11f1-9821-47403b72a036",
+    "lat": -31.424328,
+    "lng": -64.185805,
+    "titulo": "Iglesia de los Capuchinos (Iglesia del Sagrado Corazón de Jesús)",
+    "direccion": "Iglesia de los Capuchinos (Iglesia del Sagrado Corazón de Jesús)",
+    "organismo": "Ammonitida",
+    "autor": "Majo y Simon",
+    "fecha": "2026-08-21T19:14:31.000Z",
+    "fotos": [
+      "fotos/8979af50-9d94-11f1-9821-47403b72a036_1787339867.jpg"
+    ]
+  },
+  {
+    "id": "9b862850-9d93-11f1-9821-47403b72a036",
+    "lat": -34.572639,
+    "lng": -58.602451,
+    "titulo": "Club El Nogal\n\nBrasil 1508",
+    "direccion": "Club El Nogal\n\nBrasil 1508",
+    "organismo": "Ammonitida",
+    "autor": "Lauti Pérez",
+    "fecha": "2026-08-21T19:07:52.000Z",
+    "fotos": [
+      "fotos/9b862850-9d93-11f1-9821-47403b72a036_1787339304.jpg",
+      "fotos/9b862850-9d93-11f1-9821-47403b72a036_1787339315.jpg"
+    ]
+  },
+  {
+    "id": "9f8b7960-9d92-11f1-9821-47403b72a036",
+    "lat": -34.823697,
+    "lng": -58.640682,
+    "titulo": "California 7953\n\nEn los canteros en la vereda.",
+    "direccion": "California 7953\n\nEn los canteros en la vereda.",
+    "organismo": "Aptychus (Ammonitida)",
+    "autor": "Matias Lescano",
+    "fecha": "2026-08-21T19:00:49.000Z",
+    "fotos": [
+      "fotos/9f8b7960-9d92-11f1-9821-47403b72a036_1787338862.jpg"
+    ]
+  },
+  {
+    "id": "fa6c0270-9d90-11f1-9821-47403b72a036",
+    "lat": -31.423365,
+    "lng": -64.190694,
+    "titulo": "Francisco N de Laprida 230\n\nEn las paredes. Se ven desde google maps!",
+    "direccion": "Francisco N de Laprida 230\n\nEn las paredes. Se ven desde google maps!",
+    "organismo": "Ammonitida \nAptychus (Ammonitida)",
+    "autor": "Juan Pablo Cardozo",
+    "fecha": "2026-08-21T18:49:02.000Z",
+    "fotos": [
+      "fotos/fa6c0270-9d90-11f1-9821-47403b72a036_1787338263.jpg",
+      "fotos/fa6c0270-9d90-11f1-9821-47403b72a036_1787338279.jpg",
+      "fotos/fa6c0270-9d90-11f1-9821-47403b72a036_1787338289.jpg"
+    ]
+  },
+  {
     "id": "6f7d9a70-9d90-11f1-9821-47403b72a036",
     "lat": -34.7608,
     "lng": -58.424029,
@@ -634,11 +689,13 @@
     "lng": -58.373277,
     "titulo": "Catedral Metropolitana",
     "direccion": "Catedral Metropolitana",
-    "organismo": "Ammonite",
-    "autor": "Lucía Balarino",
+    "organismo": "Ammonitida",
+    "autor": "Lucía Balarino\nSimon y Majo\nMaximiliano Zalazar",
     "fecha": "2026-08-19T12:46:45.000Z",
     "fotos": [
-      "fotos/08e82020-9bcc-11f1-8aec-69e99d07bd51_1787143697.jpg"
+      "fotos/08e82020-9bcc-11f1-8aec-69e99d07bd51_1787143697.jpg",
+      "fotos/08e82020-9bcc-11f1-8aec-69e99d07bd51_1787339431.jpg",
+      "fotos/08e82020-9bcc-11f1-8aec-69e99d07bd51_1787339597.jpg"
     ]
   },
   {
