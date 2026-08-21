@@ -216,3 +216,13 @@ select:hover, button:hover, .filter-btn:hover {
     margin-bottom: 12px !important;
     margin-left: 12px !important;
 }
+
+/* Contenedor ajustado para el logo de doble tamaño */
+.map-logo-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    margin-bottom: 15px !important;
+    margin-left: 15px !important;
+}
