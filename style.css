@@ -290,3 +290,8 @@ html, body {
   height: 100%;
   min-height: 0;
 }
+
+/* Separación entre el selector de capas y los botones de zoom */
+.leaflet-top.leaflet-right .leaflet-control-zoom {
+  margin-top: 10px !important;
+}
