@@ -1,5 +1,20 @@
 const fosiles = [
   {
+    "id": "296ba172-a0b0-4137-bc37-32709d2dca03",
+    "lat": -34.605941,
+    "lng": -58.438177,
+    "titulo": "Museo Argentino de Ciencias Naturales\n\nEn la exhibición, en las paredes detrás de los meteoritos",
+    "direccion": "Museo Argentino de Ciencias Naturales\n\nEn la exhibición, en las paredes detrás de los meteoritos",
+    "organismo": "Braquiópodos (Brachiopoda)",
+    "autor": "EIV",
+    "fecha": "2026-08-21T20:09:44.000Z",
+    "fotos": [
+      "fotos/296ba172-a0b0-4137-bc37-32709d2dca03_1787342872.jpg",
+      "fotos/296ba172-a0b0-4137-bc37-32709d2dca03_1787342880.jpg",
+      "fotos/296ba172-a0b0-4137-bc37-32709d2dca03_1787342888.jpg"
+    ]
+  },
+  {
     "id": "d838d8b0-9d98-11f1-9821-47403b72a036",
     "lat": -34.632793,
     "lng": -58.406303,
