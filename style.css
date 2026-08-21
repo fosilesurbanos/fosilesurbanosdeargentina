@@ -366,3 +366,63 @@ html, body {
   width: 100%;
   margin-top: 4px;
 }
+
+/* ===================================================
+   CORRECCIÓN DEL CONTENEDOR DE FILTROS FLOTANTE
+   =================================================== */
+
+/* El contenedor principal debe ser transparente y sin espacio extra */
+#panel-filtros {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+/* Botón compacto con el ícono de la lupa */
+#toggle-panel {
+  width: 34px !important;
+  height: 34px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: #fdae61 !important;
+  color: #000000 !important;
+  border: 2px solid rgba(0, 0, 0, 0.2) !important;
+  border-radius: 4px !important;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.2s ease;
+}
+
+#toggle-panel:hover {
+  background-color: #fca043 !important;
+}
+
+/* El recuadro blanco aparece ÚNICAMENTE dentro de este menú cuando se despliega */
+#contenido-filtros {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #ffffff !important;
+  padding: 12px 16px;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  min-width: 210px;
+  border-top: 3px solid #1B365D;
+}
+
+/* Cuando está oculto no ocupa ningún espacio */
+#contenido-filtros.oculto {
+  display: none !important;
+}
