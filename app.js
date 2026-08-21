@@ -41,12 +41,26 @@ const baseMaps = {
 
 L.control.layers(baseMaps).addTo(map);
 
-// --- LOGO APA ABAJO A LA IZQUIERDA ---
+// --- CONTROLES FLOTANTES (APA e Instagram) ABAJO A LA IZQUIERDA ---
 const logoControl = L.control({ position: 'bottomleft' });
 
 logoControl.onAdd = function(map) {
   const div = L.DomUtil.create('div', 'map-logo-container');
-  div.innerHTML = `<img src="logoapa.png" alt="Logo APA" style="height: 90px; width: auto; display: block;">`;
+  div.innerHTML = `
+    <!-- Logo de la APA con enlace -->
+    <a href="https://www.apaleontologica.org.ar/mapa-de-fosiles-urbanos/" target="_blank" rel="noopener" title="Visitar Asociación Paleontológica Argentina">
+      <img src="logoapa.png" alt="Logo APA" class="logo-apa-img">
+    </a>
+    
+    <!-- Ícono de Instagram con enlace -->
+    <a href="https://www.instagram.com/fosilesurbanosargentina/" target="_blank" rel="noopener" class="ig-link" title="Seguir en Instagram @fosilesurbanosargentina">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ig-icon">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+      </svg>
+    </a>
+  `;
   return div;
 };
 
