@@ -426,3 +426,40 @@ html, body {
 #contenido-filtros.oculto {
   display: none !important;
 }
+
+/* ===================================================
+   UBICACIÓN DEL BOTÓN DE FILTROS DENTRO DEL MAPA
+   =================================================== */
+
+/* Asegura que el contenedor del mapa admita posicionamiento absoluto */
+#map {
+  position: relative !important;
+}
+
+/* Ubica el botón de la lupa a la misma altura que el selector de capas (10px desde arriba) */
+#panel-filtros {
+  position: absolute !important;
+  top: 10px !important;
+  left: 10px !important;
+  z-index: 1000 !important; /* Garantiza que quede por encima de la capa del mapa */
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+/* Menú desplegable ajustado al nuevo botón flotante */
+#contenido-filtros {
+  position: absolute;
+  top: 42px; /* Se despliega justo debajo del botón de 34px */
+  left: 0;
+  background: #ffffff !important;
+  padding: 12px 16px;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  min-width: 210px;
+  border-top: 3px solid #1B365D;
+}
