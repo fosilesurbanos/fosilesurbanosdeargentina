@@ -23,14 +23,15 @@ const opentopo = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
   maxZoom: 17
 });
 
-// Inicialización del Mapa
+// Inicialización del Mapa (se deshabilita el zoomControl por defecto)
 const map = L.map('map', {
   center: [-34.6, -64.0],
   zoom: 5,
+  zoomControl: false, // <-- Desactiva el zoom de la esquina superior izquierda
   layers: [osm]
 });
 
-// Selector de capas
+// Selector de capas (arriba a la derecha)
 const baseMaps = {
   "OpenStreetMap": osm,
   "Satelital (Esri)": esriSat,
@@ -40,6 +41,9 @@ const baseMaps = {
 };
 
 L.control.layers(baseMaps).addTo(map);
+
+// Agregar los botones de Zoom en la esquina superior derecha (quedará ordenado justo debajo de las capas)
+L.control.zoom({ position: 'topright' }).addTo(map);
 
 // --- CONTROLES FLOTANTES (APA e Instagram) ABAJO A LA IZQUIERDA ---
 const logoControl = L.control({ position: 'bottomleft' });
