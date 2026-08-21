@@ -49,7 +49,7 @@ logoControl.onAdd = function(map) {
   div.innerHTML = `
     <!-- Logo de la APA con enlace -->
     <a href="https://www.apaleontologica.org.ar/mapa-de-fosiles-urbanos/" target="_blank" rel="noopener" title="Visitar Asociación Paleontológica Argentina">
-      <img src="logoapa.png" alt="Logo APA" class="logo-apa-img">
+      <img src="logoapa.png" alt="Logo APA" class="logo-apa-img"> style="height: 80px; width: auto; display: block;"
     </a>
     
     <!-- Ícono de Instagram con enlace -->
