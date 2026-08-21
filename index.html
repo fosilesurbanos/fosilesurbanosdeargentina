@@ -26,24 +26,25 @@
   <p>Un mapa colaborativo de fósiles encontrados en construcciones y espacios urbanos</p>
 </header>
 
-<div id="panel-filtros">
-  <button id="toggle-panel">🔍 Filtros</button>
-  <div id="contenido-filtros" class="oculto">
-    <h3>Filtrar Fósiles</h3>
-    
-    <label for="filtro-organismo">Organismo:</label>
-    <select id="filtro-organismo">
-      <option value="todos">Todos los organismos</option>
-    </select>
+<!-- EL MAPA AHORA CONTIENE EL PANEL DE FILTROS -->
+<div id="map">
+  <div id="panel-filtros">
+    <button id="toggle-panel">🔍 Filtros</button>
+    <div id="contenido-filtros" class="oculto">
+      <h3>Filtrar Fósiles</h3>
+      
+      <label for="filtro-organismo">Organismo:</label>
+      <select id="filtro-organismo">
+        <option value="todos">Todos los organismos</option>
+      </select>
 
-    <label for="filtro-autor">Autor:</label>
-    <select id="filtro-autor">
-      <option value="todos">Todos los autores</option>
-    </select>
+      <label for="filtro-autor">Autor:</label>
+      <select id="filtro-autor">
+        <option value="todos">Todos los autores</option>
+      </select>
+    </div>
   </div>
 </div>
-
-<div id="map"></div>
 
 <footer>
   Datos recolectados con <a href="https://five.epicollect.net/" target="_blank" rel="noopener">Epicollect5</a> ·
