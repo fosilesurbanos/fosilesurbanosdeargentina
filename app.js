@@ -219,11 +219,35 @@ function aplicarFiltros() {
   });
 }
 
-// Escuchadores de eventos
+// Escuchadores de eventos para los filtros de selección
 document.getElementById("filtro-organismo").addEventListener("change", aplicarFiltros);
 document.getElementById("filtro-autor").addEventListener("change", aplicarFiltros);
-document.getElementById("toggle-panel").addEventListener("click", () => {
-  document.getElementById("contenido-filtros").classList.toggle("oculto");
+
+// --- CONTROL DEL BOTÓN COMPACTO 🔍 Y CIERRE AL HACER CLIC FUERA ---
+const toggleBtn = document.getElementById("toggle-panel");
+const contenidoFiltros = document.getElementById("contenido-filtros");
+const panelFiltros = document.getElementById("panel-filtros");
+
+// 1. Cambia el texto del botón para que muestre únicamente la lupa
+toggleBtn.innerHTML = "🔍";
+toggleBtn.setAttribute("title", "Filtrar Fósiles");
+
+// 2. Abre y cierra el menú al hacer clic en el botón de la lupa
+toggleBtn.addEventListener("click", (e) => {
+  e.stopPropagation(); // Evita que el clic toque el mapa
+  contenidoFiltros.classList.toggle("oculto");
+});
+
+// 3. Evita que hacer clic dentro del menú desplegable cierre el panel
+panelFiltros.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
+
+// 4. Cierra el menú automáticamente si hacés clic en cualquier parte fuera de él
+document.addEventListener("click", (e) => {
+  if (!panelFiltros.contains(e.target)) {
+    contenidoFiltros.classList.add("oculto");
+  }
 });
 
 // Inicializar
