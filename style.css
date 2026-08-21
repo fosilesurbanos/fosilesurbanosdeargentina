@@ -226,3 +226,49 @@ select:hover, button:hover, .filter-btn:hover {
     margin-bottom: 15px !important;
     margin-left: 15px !important;
 }
+
+/* Contenedor flotante con logos y redes */
+.map-logo-container {
+  background: rgba(255, 255, 255, 0.92);
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  margin-bottom: 15px !important;
+  margin-left: 15px !important;
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Espacio entre el logo APA e Instagram */
+}
+
+/* Imagen del logo APA */
+.logo-apa-img {
+  height: 90px;
+  width: auto;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.logo-apa-img:hover {
+  transform: scale(1.03);
+}
+
+/* Enlace e ícono de Instagram */
+.ig-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #E1306C; /* Color característico de Instagram */
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.ig-link:hover {
+  background-color: rgba(225, 48, 108, 0.1);
+  transform: scale(1.1);
+}
+
+.ig-icon {
+  display: block;
+}
