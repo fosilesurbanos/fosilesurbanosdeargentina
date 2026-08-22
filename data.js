@@ -1,5 +1,19 @@
 const fosiles = [
   {
+    "id": "f4021c67-6a5a-4aa4-b721-399a26035e96",
+    "lat": -34.619007,
+    "lng": -58.434045,
+    "titulo": "Rosario 368\n\nEn la columna",
+    "direccion": "Rosario 368\n\nEn la columna",
+    "organismo": "Ammonitida",
+    "autor": "EIV",
+    "fecha": "2026-08-22T18:05:12.000Z",
+    "fotos": [
+      "fotos/f4021c67-6a5a-4aa4-b721-399a26035e96_1787421863.jpg",
+      "fotos/f4021c67-6a5a-4aa4-b721-399a26035e96_1787421868.jpg"
+    ]
+  },
+  {
     "id": "296ba172-a0b0-4137-bc37-32709d2dca03",
     "lat": -34.605941,
     "lng": -58.438177,
