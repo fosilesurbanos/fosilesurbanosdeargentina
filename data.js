@@ -1,5 +1,19 @@
 const fosiles = [
   {
+    "id": "7380fd10-9fbb-11f1-96fd-e314911dc7a1",
+    "lat": -34.619553,
+    "lng": -58.436158,
+    "titulo": "Instituto de Criminalística, PFA\nEn la entrada",
+    "direccion": "Instituto de Criminalística, PFA\nEn la entrada",
+    "organismo": "Ammonites (Ammonitida)",
+    "autor": "Franco Bernardi",
+    "fecha": "2026-08-24T12:58:07.000Z",
+    "fotos": [
+      "fotos/7380fd10-9fbb-11f1-96fd-e314911dc7a1_1787576345.jpg",
+      "fotos/7380fd10-9fbb-11f1-96fd-e314911dc7a1_1787576357.jpg"
+    ]
+  },
+  {
     "id": "82f86cf0-9fb2-11f1-8561-d73c0a45408b",
     "lat": -34.631318,
     "lng": -58.481401,
