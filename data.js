@@ -1,5 +1,159 @@
 const fosiles = [
   {
+    "id": "82f86cf0-9fb2-11f1-8561-d73c0a45408b",
+    "lat": -34.631318,
+    "lng": -58.481401,
+    "titulo": "Bahía Blanca al 200, casi esquina Bacacay\nEn la pared del local al lado de la verdulería",
+    "direccion": "Bahía Blanca al 200, casi esquina Bacacay\nEn la pared del local al lado de la verdulería",
+    "organismo": "Ammonites (Ammonitida)",
+    "autor": "Mulder Mxy (cuenta de Instagram)",
+    "fecha": "2026-08-24T11:54:07.000Z",
+    "fotos": []
+  },
+  {
+    "id": "c073d340-9fb1-11f1-9960-edf7859e9fea",
+    "lat": -34.622462,
+    "lng": -58.440967,
+    "titulo": "Panadería Granovia",
+    "direccion": "Panadería Granovia",
+    "organismo": "Caracoles (Gastropoda)",
+    "autor": "Mulder Mxy (cuenta de Instagram)",
+    "fecha": "2026-08-24T11:48:41.000Z",
+    "fotos": []
+  },
+  {
+    "id": "84294140-9fb1-11f1-9960-edf7859e9fea",
+    "lat": -34.806137,
+    "lng": -58.400317,
+    "titulo": "Plazoleta Stella Maris \nEn las lajas de las veredas",
+    "direccion": "Plazoleta Stella Maris \nEn las lajas de las veredas",
+    "organismo": "Ammonites (Ammonitida)",
+    "autor": "Makaya_23",
+    "fecha": "2026-08-24T11:47:00.000Z",
+    "fotos": []
+  },
+  {
+    "id": "ddfbc040-9fb0-11f1-9960-edf7859e9fea",
+    "lat": -38.533674,
+    "lng": -70.36573,
+    "titulo": "Terminal de ómnibus\nEn la fachada",
+    "direccion": "Terminal de ómnibus\nEn la fachada",
+    "organismo": "Ammonites (Ammonitida)",
+    "autor": "Makaya_23",
+    "fecha": "2026-08-24T11:42:21.000Z",
+    "fotos": []
+  },
+  {
+    "id": "b853dbc0-9fb0-11f1-9960-edf7859e9fea",
+    "lat": -37.378532,
+    "lng": -70.271916,
+    "titulo": "Plaza Sarmiento\nEn las lajas de las veredas",
+    "direccion": "Plaza Sarmiento\nEn las lajas de las veredas",
+    "organismo": "Ammonites (Ammonitida)",
+    "autor": "Makaya_23",
+    "fecha": "2026-08-24T11:41:18.000Z",
+    "fotos": []
+  },
+  {
+    "id": "6bdb7140-9fb0-11f1-9960-edf7859e9fea",
+    "lat": -38.906445,
+    "lng": -70.068591,
+    "titulo": "Museo Olsacher\nEn las lajas de la vereda",
+    "direccion": "Museo Olsacher\nEn las lajas de la vereda",
+    "organismo": "Ammonites (Ammonitida)",
+    "autor": "Makaya_23",
+    "fecha": "2026-08-24T11:39:09.000Z",
+    "fotos": []
+  },
+  {
+    "id": "01a7f140-9fb0-11f1-9960-edf7859e9fea",
+    "lat": -34.745193,
+    "lng": -58.387487,
+    "titulo": "Cochabamba y Arenales\nEn la vereda de un domicilio",
+    "direccion": "Cochabamba y Arenales\nEn la vereda de un domicilio",
+    "organismo": "Ammonites (Ammonitida)",
+    "autor": "Makaya_23",
+    "fecha": "2026-08-24T11:36:11.000Z",
+    "fotos": []
+  },
+  {
+    "id": "b0c7bfd0-9faf-11f1-9960-edf7859e9fea",
+    "lat": -34.757,
+    "lng": -58.386067,
+    "titulo": "Nicora y Pedernera\nEn las lajas de la entrada al garage de un domicilio",
+    "direccion": "Nicora y Pedernera\nEn las lajas de la entrada al garage de un domicilio",
+    "organismo": "Ammonite (Ammonitida)",
+    "autor": "Makaya_23",
+    "fecha": "2026-08-24T11:33:55.000Z",
+    "fotos": []
+  },
+  {
+    "id": "bf557250-9fae-11f1-9960-edf7859e9fea",
+    "lat": -34.800869,
+    "lng": -58.388336,
+    "titulo": "Castelli 920",
+    "direccion": "Castelli 920",
+    "organismo": "Ammonites (Ammonitida)",
+    "autor": "Makaya_23",
+    "fecha": "2026-08-24T11:27:10.000Z",
+    "fotos": []
+  },
+  {
+    "id": "20534510-9fae-11f1-9960-edf7859e9fea",
+    "lat": -34.796507,
+    "lng": -58.390377,
+    "titulo": "Bartolomé Mitre y Mariano De María \nEn la vereda",
+    "direccion": "Bartolomé Mitre y Mariano De María \nEn la vereda",
+    "organismo": "Ammonites (Ammonitida)",
+    "autor": "Makaya_23",
+    "fecha": "2026-08-24T11:22:44.000Z",
+    "fotos": []
+  },
+  {
+    "id": "dc5d4f50-9fac-11f1-833a-bf771eae456d",
+    "lat": -37.967992,
+    "lng": -57.549189,
+    "titulo": "Pinturería Rex\nAv. Constitución 4556, en la vereda",
+    "direccion": "Pinturería Rex\nAv. Constitución 4556, en la vereda",
+    "organismo": "Ammonites (Ammonitida)",
+    "autor": "Nahuel charri. Instagram otroventanaldememes",
+    "fecha": "2026-08-24T11:13:40.000Z",
+    "fotos": []
+  },
+  {
+    "id": "336e3d50-9fac-11f1-833a-bf771eae456d",
+    "lat": -32.944263,
+    "lng": -60.653745,
+    "titulo": "Sanatorio Parque\n\nMármoles en los baños de las habitaciones",
+    "direccion": "Sanatorio Parque\n\nMármoles en los baños de las habitaciones",
+    "organismo": "Caracoles (Gastropoda), Corales (Cnidaria)",
+    "autor": "Candelaria Gómez Murray",
+    "fecha": "2026-08-24T11:08:57.000Z",
+    "fotos": []
+  },
+  {
+    "id": "ba15c950-9fab-11f1-833a-bf771eae456d",
+    "lat": -34.604906,
+    "lng": -58.428876,
+    "titulo": "Yatay 601",
+    "direccion": "Yatay 601",
+    "organismo": "Corales (Cnidaria)",
+    "autor": "@lasfotosdenano",
+    "fecha": "2026-08-24T11:05:33.000Z",
+    "fotos": []
+  },
+  {
+    "id": "4451c6b0-9fab-11f1-833a-bf771eae456d",
+    "lat": -34.583292,
+    "lng": -58.478042,
+    "titulo": "Tréveris 2586",
+    "direccion": "Tréveris 2586",
+    "organismo": "Ammonitida",
+    "autor": "usuario de instagram: @galher1768",
+    "fecha": "2026-08-24T11:02:15.000Z",
+    "fotos": []
+  },
+  {
     "id": "ba323ce0-9fa9-11f1-a3f7-53f25d0eaa6c",
     "lat": -34.527562,
     "lng": -58.493387,
@@ -149,7 +303,7 @@ const fosiles = [
     "titulo": "Francisco N de Laprida 230\n\nEn las paredes. Se ven desde google maps!",
     "direccion": "Francisco N de Laprida 230\n\nEn las paredes. Se ven desde google maps!",
     "organismo": "Ammonitida \nAptychus (Ammonitida)",
-    "autor": "Juan Pablo Cardozo",
+    "autor": "Juan Pablo Cardozo \nAngel @momoiro_no_niji (Ig)",
     "fecha": "2026-08-21T18:49:02.000Z",
     "fotos": []
   },
@@ -182,7 +336,7 @@ const fosiles = [
     "titulo": "Toscas Shopping\n\nEn las escaleras de la entrada, por calle Formosa",
     "direccion": "Toscas Shopping\n\nEn las escaleras de la entrada, por calle Formosa",
     "organismo": "Ammonites",
-    "autor": "@santiagopaleka",
+    "autor": "@santiagopaleka\n@quvvo Taller de Mosaico, Instagram",
     "fecha": "2026-08-21T18:36:00.000Z",
     "fotos": []
   },
@@ -952,7 +1106,7 @@ const fosiles = [
     "titulo": "Teatro Colón",
     "direccion": "Teatro Colón",
     "organismo": "Hay muchos fósiles. En el foyer principal hay rocas con ammonites en las columnas y en las escaleras; en las paredes de la sala principal está lleno de bivalvos rudistas, y también hay bivalvos en diferentes superficies horizontales castaño oscuras, como algunos canastos de basura o mesas.",
-    "autor": "EIV",
+    "autor": "EIV\n@_pri.martinez",
     "fecha": "2026-07-16T13:39:44.000Z",
     "fotos": []
   },
