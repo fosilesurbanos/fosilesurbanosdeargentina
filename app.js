@@ -139,6 +139,11 @@ function normalizarOrganismos(texto) {
     grupos.push("Equinodermos");
   }
 
+  // Braquiópodos
+  if (t.includes("brachiopod") || t.includes("braquiopod")) {
+    grupos.push("Brachiopoda");
+  }
+
   // Trazas fósiles
   if (t.includes("traza") || t.includes("cruziana")) {
     grupos.push("Trazas fósiles");
