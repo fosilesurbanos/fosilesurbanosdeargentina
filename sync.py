@@ -97,16 +97,20 @@ def sync():
     for entry in entries:
         raw_photos = []
         for k, v in entry.items():
-            if isinstance(v, str) and v.endswith(".jpg") and "five.epicollect.net" in v:
-                raw_photos.append(v)
+    if (
+        isinstance(v, str)
+        and "five.epicollect.net" in v
+        and "name=" in v
+    ):
+        raw_photos.append(v)
         
         local_photos = []
         for photo_url in raw_photos:
-            fname = photo_url.split("name=")[-1] if "name=" in photo_url else os.path.basename(photo_url)
-            if not fname.endswith(".jpg"):
-                fname += ".jpg"
-            local_path = process_image(photo_url, fname)
-            local_photos.append(local_path)
+    fname = photo_url.split("name=")[-1].split("&")[0]
+    if not fname.lower().endswith((".jpg", ".jpeg", ".png")):
+        fname += ".jpg"
+    local_path = process_image(photo_url, fname)
+    local_photos.append(local_path)
         
         lat, lng = None, None
         for k, v in entry.items():
