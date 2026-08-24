@@ -226,7 +226,7 @@ const fosiles = [
     "titulo": "Shopping Palmas del Pilar\n\nEn los pisos",
     "direccion": "Shopping Palmas del Pilar\n\nEn los pisos",
     "organismo": "Ammonitida",
-    "autor": "Twitter: monstera_yummy",
+    "autor": "Twitter: monstera_yummy\nMadre de futuro paleontólogo ??",
     "fecha": "2026-08-21T19:37:04.000Z",
     "fotos": []
   },
