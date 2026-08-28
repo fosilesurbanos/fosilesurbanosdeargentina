@@ -1,52 +1,43 @@
 // --- 1. CAPAS BASE DEL MAPA ---
-
-// Argenmap Estándar (IGN) - Formato actualizado XYZ
-const argenmap = L.tileLayer('https://wms.ign.gob.ar/geoserver/gwc/service/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=capasbase:argenmap_v2&STYLE=default&TILEMATRIXSET=EPSG:3857&TILEMATRIX=EPSG:3857:{z}&TILEROW={y}&TILECOL={x}&FORMAT=image/png', {
-  maxZoom: 19,
-  minZoom: 3,
-  attribution: '&copy; <a href="https://www.ign.gob.ar/" target="_blank" rel="noopener">IGN Argentina</a>'
-});
-
-// Argenmap Topográfico (IGN)
-const argenmapTopo = L.tileLayer('https://wms.ign.gob.ar/geoserver/gwc/service/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=capasbase:argenmap_topo&STYLE=default&TILEMATRIXSET=EPSG:3857&TILEMATRIX=EPSG:3857:{z}&TILEROW={y}&TILECOL={x}&FORMAT=image/png', {
-  maxZoom: 13,
-  minZoom: 3,
-  attribution: '&copy; <a href="https://www.ign.gob.ar/" target="_blank" rel="noopener">IGN Argentina</a>'
-});
-
-// Argenmap Oscuro (IGN)
-const argenmapOscuro = L.tileLayer('https://wms.ign.gob.ar/geoserver/gwc/service/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=capasbase:argenmap_oscuro&STYLE=default&TILEMATRIXSET=EPSG:3857&TILEMATRIX=EPSG:3857:{z}&TILEROW={y}&TILECOL={x}&FORMAT=image/png', {
-  maxZoom: 19,
-  minZoom: 3,
-  attribution: '&copy; <a href="https://www.ign.gob.ar/" target="_blank" rel="noopener">IGN Argentina</a>'
-});
-
-// OpenStreetMap Estándar
 const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
   maxZoom: 19
 });
 
-// Satelital (Esri World Imagery)
 const esriSat = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
   attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
 });
 
-// Inicialización del Mapa (se activa 'argenmap' por defecto)
-const map = L.map('map', {
-  center: [-38.4, -63.6],
-  zoom: 4,
-  zoomControl: false, // <-- Desactiva el zoom de la esquina superior izquierda
-  layers: [argenmap] // <-- Argenmap como mapa base por defecto
+const cartoPositron = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; <a href="https://carto.com/">CARTO</a>',
+  maxZoom: 20
 });
 
-// Selector de capas (arriba a la derecha)
+const cartoDark = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; <a href="https://carto.com/">CARTO</a>',
+  maxZoom: 20
+});
+
+const opentopo = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+  attribution: 'Map data: &copy; OpenStreetMap contributors, SRTM | Map style: &copy; OpenTopoMap',
+  maxZoom: 17
+});
+
+// Inicialización del Mapa
+const map = L.map('map', {
+  center: [-34.6, -64.0],
+  zoom: 5,
+  zoomControl: false,
+  layers: [osm]
+});
+
+// Selector de capas
 const baseMaps = {
-  "Argenmap": argenmap,
-  "Argenmap Topográfico": argenmapTopo,
-  "Argenmap Oscuro": argenmapOscuro,
   "OpenStreetMap": osm,
-  "Satelital": esriSat
+  "Satelital (Esri)": esriSat,
+  "Claro (CartoDB)": cartoPositron,
+  "Oscuro (CartoDB)": cartoDark,
+  "Topográfico": opentopo
 };
 
 L.control.layers(baseMaps).addTo(map);
