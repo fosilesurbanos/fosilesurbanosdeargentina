@@ -1,34 +1,25 @@
 // --- 1. CAPAS BASE DEL MAPA ---
 
-// Argenmap Estándar (Instituto Geográfico Nacional)
-const argenmap = L.tileLayer(
-  'https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capasbase:argenmap_v2@EPSG:3857@png/{z}/{x}/{-y}.png', 
-  {
-    maxZoom: 19,
-    minZoom: 3,
-    attribution: '&copy; <a href="https://www.ign.gob.ar/" target="_blank" rel="noopener">Instituto Geográfico Nacional</a>'
-  }
-);
+// Argenmap Estándar (IGN) - Formato actualizado XYZ
+const argenmap = L.tileLayer('https://wms.ign.gob.ar/geoserver/gwc/service/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=capasbase:argenmap_v2&STYLE=default&TILEMATRIXSET=EPSG:3857&TILEMATRIX=EPSG:3857:{z}&TILEROW={y}&TILECOL={x}&FORMAT=image/png', {
+  maxZoom: 19,
+  minZoom: 3,
+  attribution: '&copy; <a href="https://www.ign.gob.ar/" target="_blank" rel="noopener">IGN Argentina</a>'
+});
 
-// Argenmap Topográfico (Instituto Geográfico Nacional)
-const argenmapTopo = L.tileLayer(
-  'https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capasbase:argenmap_topo@EPSG:3857@png/{z}/{x}/{-y}.png', 
-  {
-    maxZoom: 13,
-    minZoom: 3,
-    attribution: '&copy; <a href="https://www.ign.gob.ar/" target="_blank" rel="noopener">Instituto Geográfico Nacional</a>'
-  }
-);
+// Argenmap Topográfico (IGN)
+const argenmapTopo = L.tileLayer('https://wms.ign.gob.ar/geoserver/gwc/service/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=capasbase:argenmap_topo&STYLE=default&TILEMATRIXSET=EPSG:3857&TILEMATRIX=EPSG:3857:{z}&TILEROW={y}&TILECOL={x}&FORMAT=image/png', {
+  maxZoom: 13,
+  minZoom: 3,
+  attribution: '&copy; <a href="https://www.ign.gob.ar/" target="_blank" rel="noopener">IGN Argentina</a>'
+});
 
-// Argenmap Oscuro (Instituto Geográfico Nacional)
-const argenmapOscuro = L.tileLayer(
-  'https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capasbase:argenmap_oscuro@EPSG:3857@png/{z}/{x}/{-y}.png', 
-  {
-    maxZoom: 19,
-    minZoom: 3,
-    attribution: '&copy; <a href="https://www.ign.gob.ar/" target="_blank" rel="noopener">Instituto Geográfico Nacional</a>'
-  }
-);
+// Argenmap Oscuro (IGN)
+const argenmapOscuro = L.tileLayer('https://wms.ign.gob.ar/geoserver/gwc/service/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=capasbase:argenmap_oscuro&STYLE=default&TILEMATRIXSET=EPSG:3857&TILEMATRIX=EPSG:3857:{z}&TILEROW={y}&TILECOL={x}&FORMAT=image/png', {
+  maxZoom: 19,
+  minZoom: 3,
+  attribution: '&copy; <a href="https://www.ign.gob.ar/" target="_blank" rel="noopener">IGN Argentina</a>'
+});
 
 // OpenStreetMap Estándar
 const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
