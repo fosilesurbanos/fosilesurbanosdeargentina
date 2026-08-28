@@ -1,5 +1,20 @@
 const fosiles = [
   {
+    "id": "32e27c60-a2ff-11f1-b3cb-0b2633115986",
+    "lat": -54.783955,
+    "lng": -68.259612,
+    "titulo": "Hotel Arakur, \nen los pisos",
+    "direccion": "Hotel Arakur, \nen los pisos",
+    "organismo": "Ammonites (Ammonoidea), Belemnites, vértebras de peces óseos (Osteichthyes)",
+    "autor": "María Eugenia Raffi",
+    "fecha": "2026-08-28T16:40:37.000Z",
+    "fotos": [
+      "fotos/32e27c60-a2ff-11f1-b3cb-0b2633115986_1787935303.jpg",
+      "fotos/32e27c60-a2ff-11f1-b3cb-0b2633115986_1787935313.jpg",
+      "fotos/32e27c60-a2ff-11f1-b3cb-0b2633115986_1787935323.jpg"
+    ]
+  },
+  {
     "id": "7380fd10-9fbb-11f1-96fd-e314911dc7a1",
     "lat": -34.619553,
     "lng": -58.436158,
