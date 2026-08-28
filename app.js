@@ -1,43 +1,61 @@
 // --- 1. CAPAS BASE DEL MAPA ---
+
+// Argenmap Estándar (Instituto Geográfico Nacional)
+const argenmap = L.tileLayer(
+  'https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capasbase:argenmap_v2@EPSG:3857@png/{z}/{x}/{-y}.png', 
+  {
+    maxZoom: 19,
+    minZoom: 3,
+    attribution: '&copy; <a href="https://www.ign.gob.ar/" target="_blank" rel="noopener">Instituto Geográfico Nacional</a>'
+  }
+);
+
+// Argenmap Topográfico (Instituto Geográfico Nacional)
+const argenmapTopo = L.tileLayer(
+  'https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capasbase:argenmap_topo@EPSG:3857@png/{z}/{x}/{-y}.png', 
+  {
+    maxZoom: 13,
+    minZoom: 3,
+    attribution: '&copy; <a href="https://www.ign.gob.ar/" target="_blank" rel="noopener">Instituto Geográfico Nacional</a>'
+  }
+);
+
+// Argenmap Oscuro (Instituto Geográfico Nacional)
+const argenmapOscuro = L.tileLayer(
+  'https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capasbase:argenmap_oscuro@EPSG:3857@png/{z}/{x}/{-y}.png', 
+  {
+    maxZoom: 19,
+    minZoom: 3,
+    attribution: '&copy; <a href="https://www.ign.gob.ar/" target="_blank" rel="noopener">Instituto Geográfico Nacional</a>'
+  }
+);
+
+// OpenStreetMap Estándar
 const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
   maxZoom: 19
 });
 
+// Satelital (Esri World Imagery)
 const esriSat = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
   attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
 });
 
-const cartoPositron = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-  attribution: '&copy; <a href="https://carto.com/">CARTO</a>',
-  maxZoom: 20
-});
-
-const cartoDark = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-  attribution: '&copy; <a href="https://carto.com/">CARTO</a>',
-  maxZoom: 20
-});
-
-const opentopo = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-  attribution: 'Map data: &copy; OpenStreetMap contributors, SRTM | Map style: &copy; OpenTopoMap',
-  maxZoom: 17
-});
-
-// Inicialización del Mapa (se deshabilita el zoomControl por defecto)
+// Inicialización del Mapa (se activa 'argenmap' por defecto)
 const map = L.map('map', {
-  center: [-34.6, -64.0],
-  zoom: 5,
+  center: [-38.4, -63.6],
+  zoom: 4,
   zoomControl: false, // <-- Desactiva el zoom de la esquina superior izquierda
-  layers: [osm]
+  layers: [argenmap] // <-- Argenmap como mapa base por defecto
 });
 
 // Selector de capas (arriba a la derecha)
 const baseMaps = {
+  "Argenmap": argenmap,
+  "Argenmap Topográfico": argenmapTopo,
+  "Argenmap Oscuro": argenmapOscuro,
   "OpenStreetMap": osm,
-  "Satelital (Esri)": esriSat,
-  "Claro (CartoDB)": cartoPositron,
-  "Oscuro (CartoDB)": cartoDark,
-  "Topográfico": opentopo
+  "Satelital": esriSat
 };
 
 L.control.layers(baseMaps).addTo(map);
@@ -196,9 +214,10 @@ function cargarPuntos() {
 
   map.addLayer(cluster);
 
+  // Encuadra la vista para abarcar todos los registros cargados con un margen de protección
   if (fosiles.length > 0) {
     const bounds = L.latLngBounds(fosiles.map(f => [f.lat, f.lng]));
-    map.fitBounds(bounds, { padding: [30, 30] });
+    map.fitBounds(bounds, { padding: [40, 40] });
   }
 
   poblarSelects();
