@@ -1,5 +1,19 @@
 [
   {
+    "id": "4bbcae60-ab86-11f1-ae87-f70dd9383e42",
+    "lat": -34.739852,
+    "lng": -58.399861,
+    "titulo": "Av. Vieytes y Manuel Castro, en el piso",
+    "direccion": "Av. Vieytes y Manuel Castro, en el piso",
+    "organismo": "Ammonites (Ammonitida)",
+    "autor": "Prof. Oscar Raggio",
+    "fecha": "2026-09-08T13:07:50.000Z",
+    "fotos": [
+      "fotos/4bbcae60-ab86-11f1-ae87-f70dd9383e42_1788872875.jpg",
+      "fotos/4bbcae60-ab86-11f1-ae87-f70dd9383e42_1788872881.jpg"
+    ]
+  },
+  {
     "id": "32e27c60-a2ff-11f1-b3cb-0b2633115986",
     "lat": -54.783955,
     "lng": -68.259612,
