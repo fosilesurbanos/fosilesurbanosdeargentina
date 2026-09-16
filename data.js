@@ -1,5 +1,19 @@
 const fosiles = [
   {
+    "id": "62af6670-b1c2-11f1-b364-8530a505a5fb",
+    "lat": -34.740725,
+    "lng": -58.382313,
+    "titulo": "Calle Cabrera, entre Campos y Palacios. \nSobre lajas en el piso.",
+    "direccion": "Calle Cabrera, entre Campos y Palacios. \nSobre lajas en el piso.",
+    "organismo": "Ammonites (Ammonoidea)",
+    "autor": "Prof. Oscar Raggio",
+    "fecha": "2026-09-16T11:33:06.000Z",
+    "fotos": [
+      "fotos/62af6670-b1c2-11f1-b364-8530a505a5fb_1789558665.jpg",
+      "fotos/62af6670-b1c2-11f1-b364-8530a505a5fb_1789558678.jpg"
+    ]
+  },
+  {
     "id": "4bbcae60-ab86-11f1-ae87-f70dd9383e42",
     "lat": -34.739852,
     "lng": -58.399861,
