@@ -1,5 +1,19 @@
 [
   {
+    "id": "04532219-60f2-4b7b-b08f-105e59e8b620",
+    "lat": -34.619386,
+    "lng": -58.4375,
+    "titulo": "Ángel Gimenez 60. \nEn la entrada al edificio",
+    "direccion": "Ángel Gimenez 60. \nEn la entrada al edificio",
+    "organismo": "Caracoles (Gastropoda), Nummulites",
+    "autor": "EIV",
+    "fecha": "2026-09-19T19:37:20.000Z",
+    "fotos": [
+      "fotos/04532219-60f2-4b7b-b08f-105e59e8b620_1789846550.jpg",
+      "fotos/04532219-60f2-4b7b-b08f-105e59e8b620_1789846556.jpg"
+    ]
+  },
+  {
     "id": "62af6670-b1c2-11f1-b364-8530a505a5fb",
     "lat": -34.740725,
     "lng": -58.382313,
