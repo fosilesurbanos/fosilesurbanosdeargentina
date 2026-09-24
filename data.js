@@ -1,5 +1,19 @@
 const fosiles = [
   {
+    "id": "ff2f3d82-35b7-4f95-9c4e-25415b1e70b9",
+    "lat": -34.60658,
+    "lng": -58.425,
+    "titulo": "Hospital Italiano, \nEn las escaleras",
+    "direccion": "Hospital Italiano, \nEn las escaleras",
+    "organismo": "Caracoles (Gastropoda)",
+    "autor": "@ceciliacoccaro (IG)",
+    "fecha": "2026-09-24T11:21:12.000Z",
+    "fotos": [
+      "fotos/ff2f3d82-35b7-4f95-9c4e-25415b1e70b9_1790248698.jpg",
+      "fotos/ff2f3d82-35b7-4f95-9c4e-25415b1e70b9_1790248702.jpg"
+    ]
+  },
+  {
     "id": "04532219-60f2-4b7b-b08f-105e59e8b620",
     "lat": -34.619386,
     "lng": -58.4375,
