@@ -1,5 +1,20 @@
 const fosiles = [
   {
+    "id": "14b2597d-b6f2-4c08-aa1f-4b035c2b96eb",
+    "lat": -50.3181,
+    "lng": -72.25093,
+    "titulo": "Hotel Design Suites",
+    "direccion": "Hotel Design Suites",
+    "organismo": "Erizos de mar (Echinodermata, Clypeasteroidea y regulares)",
+    "autor": "María Eugenia Raffi",
+    "fecha": "2026-09-26T21:06:37.000Z",
+    "fotos": [
+      "fotos/14b2597d-b6f2-4c08-aa1f-4b035c2b96eb_1790456485.jpg",
+      "fotos/14b2597d-b6f2-4c08-aa1f-4b035c2b96eb_1790456903.jpg",
+      "fotos/14b2597d-b6f2-4c08-aa1f-4b035c2b96eb_1790456907.jpg"
+    ]
+  },
+  {
     "id": "ff2f3d82-35b7-4f95-9c4e-25415b1e70b9",
     "lat": -34.60658,
     "lng": -58.425,
