@@ -1,5 +1,32 @@
 [
   {
+    "id": "94f2a41d-6833-48df-a650-97b056328077",
+    "lat": -34.92479,
+    "lng": -57.93652,
+    "titulo": "Concesionario Renault",
+    "direccion": "Concesionario Renault",
+    "organismo": "Ammonite (Ammonitida)",
+    "autor": "Mauricio Cerroni",
+    "fecha": "2026-10-05T20:49:56.000Z",
+    "fotos": [
+      "fotos/94f2a41d-6833-48df-a650-97b056328077_1791233322.jpg"
+    ]
+  },
+  {
+    "id": "2834e031-516b-42a4-bbde-907b95841255",
+    "lat": -34.91855,
+    "lng": -57.9401,
+    "titulo": "Calle 5 1325",
+    "direccion": "Calle 5 1325",
+    "organismo": "Ammonites (Ammonitida)",
+    "autor": "Mauricio Cerroni",
+    "fecha": "2026-10-05T20:44:51.000Z",
+    "fotos": [
+      "fotos/2834e031-516b-42a4-bbde-907b95841255_1791232825.jpg",
+      "fotos/2834e031-516b-42a4-bbde-907b95841255_1791232830.jpg"
+    ]
+  },
+  {
     "id": "14b2597d-b6f2-4c08-aa1f-4b035c2b96eb",
     "lat": -50.3181,
     "lng": -72.25093,
