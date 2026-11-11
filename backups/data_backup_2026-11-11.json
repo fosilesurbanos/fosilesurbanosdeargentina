@@ -1,5 +1,31 @@
 [
   {
+    "id": "f4818980-ddc2-11f1-ad24-1188ce7a6c08",
+    "lat": -34.557015,
+    "lng": -58.684239,
+    "titulo": "Concejal Acosta 667",
+    "direccion": "Concejal Acosta 667",
+    "organismo": "Ammonite (Ammonoidea)",
+    "autor": "Sofi Della Rodolfa",
+    "fecha": "2026-11-11T11:28:02.000Z",
+    "fotos": [
+      "fotos/f4818980-ddc2-11f1-ad24-1188ce7a6c08_1794396523.jpg"
+    ]
+  },
+  {
+    "id": "6e1686c0-ddc2-11f1-ad24-1188ce7a6c08",
+    "lat": -34.62961,
+    "lng": -58.374926,
+    "titulo": "Edificio AGEA, Tacuarí 1842, 3er piso",
+    "direccion": "Edificio AGEA, Tacuarí 1842, 3er piso",
+    "organismo": "Ammonites (Ammonoidea)",
+    "autor": "@hijadesomin",
+    "fecha": "2026-11-11T11:24:16.000Z",
+    "fotos": [
+      "fotos/6e1686c0-ddc2-11f1-ad24-1188ce7a6c08_1794396270.jpg"
+    ]
+  },
+  {
     "id": "94f2a41d-6833-48df-a650-97b056328077",
     "lat": -34.92479,
     "lng": -57.93652,
